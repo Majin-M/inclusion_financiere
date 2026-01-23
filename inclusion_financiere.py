@@ -16,10 +16,17 @@ COLUMNS = [
 
 @st.cache_data
 def load_data():
-    # Charger le CSV sans header
-    df = pd.read_csv("Financial_inclusion_dataset.csv", names=COLUMNS, header=None)
-    # Supprimer la colonne uniqueid
-    df = df.drop(columns=["uniqueid"])
+    df = pd.read_csv("Financial_inclusion_dataset.csv")
+    df = df.drop(columns=["uniqueid"], errors="ignore")  # ignore si colonne absente
+
+    # Forcer les colonnes numériques
+    df["year"] = pd.to_numeric(df["year"], errors="coerce")
+    df["age_of_respondent"] = pd.to_numeric(df["age_of_respondent"], errors="coerce")
+    df["household_size"] = pd.to_numeric(df["household_size"], errors="coerce")
+
+    # Supprimer les lignes avec valeurs manquantes après conversion
+    df = df.dropna(subset=["year", "age_of_respondent", "household_size"])
+
     return df
 
 @st.cache_resource
