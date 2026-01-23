@@ -39,7 +39,24 @@ def train_model(df):
 
 # Charger les données et entraîner le modèle
 df = load_data()
-model, X_columns = train_model(df)
+@st.cache_resource
+def train_model(df):
+    # Supprimer les lignes où la target ou le téléphone est manquant
+    df = df.dropna(subset=["bank_account", "cellphone_access"])
+
+    # Encoder les colonnes binaires
+    df["bank_account"] = df["bank_account"].map({"Yes": 1, "No": 0})
+    df["cellphone_access"] = df["cellphone_access"].map({"Yes": 1, "No": 0})
+
+    # Encoder les colonnes catégorielles
+    X = pd.get_dummies(df.drop("bank_account", axis=1))
+    y = df["bank_account"]
+
+    model = RandomForestClassifier(n_estimators=200, random_state=42)
+    model.fit(X, y)
+
+    return model, X.columns
+
 
 # -----------------------------------
 # UI
