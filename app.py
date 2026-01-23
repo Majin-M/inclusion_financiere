@@ -25,20 +25,28 @@ df, model, X_columns = load_model_and_data()
 # -----------------------------------
 st.title("💳 Prédicteur de compte en banque")
 
+# LABELS
+phone_labels = {"Oui": "Yes", "Non": "No"}
+gender_labels = {"Homme": "Male", "Femme": "Female"}
+location_labels = {"Urbain": "Urban", "Rural": "Rural"}
+
 with st.form("prediction_form"):
     country = st.selectbox("Pays", df["country"].unique())
     year = st.slider("Année", int(df["year"].min()), int(df["year"].max()), int(df["year"].median()))
     age = st.slider("Âge", int(df["respondent_age"].min()), int(df["respondent_age"].max()), 30)
     household = st.slider("Taille du foyer", int(df["household_size"].min()), int(df["household_size"].max()), 3)
-    gender = st.selectbox("Genre", df["gender_of_respondent"].unique())
-    location = st.selectbox("Localisation", df["type_of_location"].unique())
-    education = st.selectbox("Niveau d'étude", df["level_of_educuation"].unique())
-    job = st.selectbox("Type d'emploi", df["type_of_job"].unique())
-    marital = st.selectbox("Situation matrimoniale", df["marital_status"].unique())
-    relation = st.selectbox("Relation avec le chef du foyer", df["the_relathip_with_head"].unique())
-    phone = st.selectbox("Accès téléphonique", ["Yes", "No"])
+
+    gender_ui = st.selectbox("Genre", gender_labels.keys())
+    gender = gender_labels[gender_ui]
+
+    location_ui = st.selectbox("Localisation", location_labels.keys())
+    location = location_labels[location_ui]
+
+    phone_ui = st.selectbox("Accès téléphonique", phone_labels.keys())
+    phone = phone_labels[phone_ui]
 
     submit = st.form_submit_button("Prédire")
+
 
 # -----------------------------------
 # PREDICTION
