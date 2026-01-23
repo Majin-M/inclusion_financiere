@@ -20,17 +20,11 @@ def load_model_and_data():
 df, model, X_columns = load_model_and_data()
 
 # ----------------------------
-# DICTIONNAIRES DE TRADUCTION
+# DICTIONNAIRES POUR LABELS FR
 # ----------------------------
 gender_labels = {"Male": "Homme", "Female": "Femme"}
 location_labels = {"Urban": "Urbain", "Rural": "Rural"}
 phone_labels = {"Yes": "Oui", "No": "Non"}
-
-# Traduction socio-professionnelle
-education_labels = {v: v for v in df["level_of_educuation"].unique()}  # remplacer si tu veux FR
-job_labels = {v: v for v in df["type_of_job"].unique()}
-marital_labels = {v: v for v in df["marital_status"].unique()}
-relation_labels = {v: v for v in df["the_relathip_with_head"].unique()}
 
 # ----------------------------
 # FORMULAIRE UTILISATEUR
@@ -47,15 +41,21 @@ with st.form("prediction_form"):
         age = st.slider("Âge", int(df["respondent_age"].min()), int(df["respondent_age"].max()), 30)
 
     with col2:
-        household = st.slider("Taille du foyer 👨‍👩‍👧‍👦", int(df["household_size"].min()), int(df["household_size"].max()), 3)
+        household = st.slider(
+            "Taille du foyer 👨‍👩‍👧‍👦",
+            int(df["household_size"].min()), 
+            int(df["household_size"].max()), 
+            3,
+            help="Nombre de personnes dans le foyer"
+        )
         gender = st.selectbox("Genre", list(gender_labels.values()))
         location = st.selectbox("Localisation", list(location_labels.values()))
     
     with st.expander("Informations socio-professionnelles"):
-        education = st.selectbox("Niveau d'étude", list(education_labels.values()))
-        job = st.selectbox("Type d'emploi", list(job_labels.values()))
-        marital = st.selectbox("Situation matrimoniale", list(marital_labels.values()))
-        relation = st.selectbox("Relation avec le chef du foyer", list(relation_labels.values()))
+        education = st.selectbox("Niveau d'étude", df["level_of_educuation"].unique())
+        job = st.selectbox("Type d'emploi", df["type_of_job"].unique())
+        marital = st.selectbox("Situation matrimoniale", df["marital_status"].unique())
+        relation = st.selectbox("Relation avec le chef du foyer", df["the_relathip_with_head"].unique())
         phone = st.selectbox("Accès téléphonique 📱", list(phone_labels.values()))
     
     submit = st.form_submit_button("💡 Prédire")
@@ -64,7 +64,7 @@ with st.form("prediction_form"):
 # PREDICTION
 # ----------------------------
 if submit:
-    # Traduire labels FR -> original
+    # Traduire labels français en valeur originale
     gender_val = [k for k,v in gender_labels.items() if v == gender][0]
     location_val = [k for k,v in location_labels.items() if v == location][0]
     phone_val = [k for k,v in phone_labels.items() if v == phone][0]
@@ -86,5 +86,4 @@ if submit:
     user_encoded = preprocess_user_input(user, X_columns)
     proba = model.predict_proba(user_encoded)[0][1]
 
-    # Affichage plus lisible sur dark mode
-    st.info(f"💳 Probabilité de posséder un compte bancaire : {proba:.1%}")
+    st.markdown(f"💳 Probabilité de posséder un compte bancaire : {proba:.1%}")
