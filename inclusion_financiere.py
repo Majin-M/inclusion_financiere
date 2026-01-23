@@ -1,24 +1,34 @@
 import streamlit as st
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
 
 # -----------------------------------
 # CONFIG
 # -----------------------------------
-st.set_page_config("Prédicteur de compte en banque", "💳")
+st.set_page_config("💳 Prédicteur de compte en banque", "💳")
+
+# Définir les noms de colonnes car le CSV n'a pas de header
+COLUMNS = [
+    "country", "year", "uniqueid", "bank_account", "location_type", "cellphone_access",
+    "household_size", "age_of_respondent", "gender_of_respondent",
+    "relationship_with_head", "marital_status", "education_level", "job_type"
+]
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Financial_inclusion_dataset.csv")
+    # Charger le CSV sans header
+    df = pd.read_csv("Financial_inclusion_dataset.csv", names=COLUMNS, header=None)
+    # Supprimer la colonne uniqueid
     df = df.drop(columns=["uniqueid"])
     return df
 
 @st.cache_resource
 def train_model(df):
+    # Encoder les colonnes binaires
     df["bank_account"] = df["bank_account"].map({"Yes": 1, "No": 0})
     df["cellphone_access"] = df["cellphone_access"].map({"Yes": 1, "No": 0})
 
+    # Encoder les colonnes catégorielles
     X = pd.get_dummies(df.drop("bank_account", axis=1))
     y = df["bank_account"]
 
@@ -27,6 +37,7 @@ def train_model(df):
 
     return model, X.columns
 
+# Charger les données et entraîner le modèle
 df = load_data()
 model, X_columns = train_model(df)
 
@@ -35,23 +46,23 @@ model, X_columns = train_model(df)
 # -----------------------------------
 st.title("💳 Prédicteur de compte en banque")
 
-
 with st.form("Formulaire prédiction"):
     country = st.selectbox("Pays", df["country"].unique())
-    year = st.slider("Année", 2016, 2018, 2017)
-    age = st.slider("Age", 16, 100, 30)
-    household = st.slider("Taille du foyer", 1, 20, 3)
-    gender = st.selectbox("genre", df["gender_of_respondent"].unique())
+    year = st.slider("Année", int(df["year"].min()), int(df["year"].max()), int(df["year"].median()))
+    age = st.slider("Âge", int(df["age_of_respondent"].min()), int(df["age_of_respondent"].max()), 30)
+    household = st.slider("Taille du foyer", int(df["household_size"].min()), int(df["household_size"].max()), 3)
+    gender = st.selectbox("Genre", df["gender_of_respondent"].unique())
     location = st.selectbox("Localisation", df["location_type"].unique())
-    education = st.selectbox("Etude", df["education_level"].unique())
-    job = st.selectbox("Travail", df["job_type"].unique())
+    education = st.selectbox("Niveau d'étude", df["education_level"].unique())
+    job = st.selectbox("Type d'emploi", df["job_type"].unique())
     marital = st.selectbox("Situation matrimoniale", df["marital_status"].unique())
-    relation = st.selectbox("relation avec le chef", df["relationship_with_head"].unique())
+    relation = st.selectbox("Relation avec le chef du foyer", df["relationship_with_head"].unique())
     phone = st.selectbox("Accès téléphonique", ["Yes", "No"])
 
-    submit = st.form_submit_button("Prédiction")
+    submit = st.form_submit_button("Prédire")
 
 if submit:
+    # Créer un dataframe utilisateur
     user = pd.DataFrame([{
         "country": country,
         "year": year,
@@ -66,9 +77,11 @@ if submit:
         "cellphone_access": 1 if phone == "Yes" else 0
     }])
 
-    user = pd.get_dummies(user)
-    user = user.reindex(columns=X_columns, fill_value=0)
+    # Encoder comme lors de l'entraînement
+    user_encoded = pd.get_dummies(user)
+    user_encoded = user_encoded.reindex(columns=X_columns, fill_value=0)
 
-    proba = model.predict_proba(user)[0][1]
+    # Prédiction
+    proba = model.predict_proba(user_encoded)[0][1]
 
-    st.success(f"Probabilités de posséder un compte en banque: **{proba:.1%}**")
+    st.success(f"Probabilité de posséder un compte en banque : **{proba:.1%}**")
