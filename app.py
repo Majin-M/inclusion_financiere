@@ -1,17 +1,16 @@
 import streamlit as st
 import pandas as pd
-
 from src.data_processing import load_clean_data, preprocess_user_input
 from src.model import train_model
 
-# -----------------------------------
+# ----------------------------
 # CONFIG
-# -----------------------------------
-st.set_page_config("💳 Prédicteur de compte en banque", "💳")
+# ----------------------------
+st.set_page_config("💳 Prédicteur de compte bancaire", "💳", layout="wide")
 
-# -----------------------------------
-# LOAD DATA & MODEL
-# -----------------------------------
+# ----------------------------
+# CHARGEMENT DES DONNÉES & MODÈLE
+# ----------------------------
 @st.cache_resource
 def load_model_and_data():
     df = load_clean_data()
@@ -20,54 +19,83 @@ def load_model_and_data():
 
 df, model, X_columns = load_model_and_data()
 
-# -----------------------------------
-# UI
-# -----------------------------------
-st.title("💳 Prédicteur de compte en banque")
+# ----------------------------
+# DICTIONNAIRES POUR LABELS FR
+# ----------------------------
+gender_labels = {"Male": "Homme", "Female": "Femme"}
+location_labels = {"Urban": "Urbain", "Rural": "Rural"}
+phone_labels = {"Yes": "Oui", "No": "Non"}
 
-# LABELS
-phone_labels = {"Oui": "Yes", "Non": "No"}
-gender_labels = {"Homme": "Male", "Femme": "Female"}
-location_labels = {"Urbain": "Urban", "Rural": "Rural"}
+# ----------------------------
+# FORMULAIRE UTILISATEUR
+# ----------------------------
+st.title("💳 Prédicteur de compte bancaire")
 
 with st.form("prediction_form"):
-    country = st.selectbox("Pays", df["country"].unique())
-    year = st.slider("Année", int(df["year"].min()), int(df["year"].max()), int(df["year"].median()))
-    age = st.slider("Âge", int(df["respondent_age"].min()), int(df["respondent_age"].max()), 30)
-    household = st.slider("Taille du foyer", int(df["household_size"].min()), int(df["household_size"].max()), 3)
+    st.subheader("Informations personnelles")
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        country = st.selectbox("Pays", df["country"].unique())
+        year = st.slider("Année", int(df["year"].min()), int(df["year"].max()), int(df["year"].median()))
+        age = st.slider("Âge", int(df["respondent_age"].min()), int(df["respondent_age"].max()), 30)
 
-    gender_ui = st.selectbox("Genre", gender_labels.keys())
-    gender = gender_labels[gender_ui]
+    with col2:
+        household = st.slider(
+            "Taille du foyer 👨‍👩‍👧‍👦",
+            int(df["household_size"].min()), 
+            int(df["household_size"].max()), 
+            3,
+            help="Nombre de personnes dans le foyer"
+        )
+        gender = st.selectbox("Genre", list(gender_labels.values()))
+        location = st.selectbox("Localisation", list(location_labels.values()))
+    
+    with st.expander("Informations socio-professionnelles"):
+        education = st.selectbox("Niveau d'étude", df["level_of_educuation"].unique())
+        job = st.selectbox("Type d'emploi", df["type_of_job"].unique())
+        marital = st.selectbox("Situation matrimoniale", df["marital_status"].unique())
+        relation = st.selectbox("Relation avec le chef du foyer", df["the_relathip_with_head"].unique())
+        phone = st.selectbox("Accès téléphonique 📱", list(phone_labels.values()))
+    
+    submit = st.form_submit_button("💡 Prédire")
 
-    location_ui = st.selectbox("Localisation", location_labels.keys())
-    location = location_labels[location_ui]
-
-    phone_ui = st.selectbox("Accès téléphonique", phone_labels.keys())
-    phone = phone_labels[phone_ui]
-
-    submit = st.form_submit_button("Prédire")
-
-
-# -----------------------------------
+# ----------------------------
 # PREDICTION
-# -----------------------------------
+# ----------------------------
 if submit:
+    # Traduire labels français en valeur originale
+    gender_val = [k for k,v in gender_labels.items() if v == gender][0]
+    location_val = [k for k,v in location_labels.items() if v == location][0]
+    phone_val = [k for k,v in phone_labels.items() if v == phone][0]
+
     user = pd.DataFrame([{
         "country": country,
         "year": year,
         "respondent_age": age,
         "household_size": household,
-        "gender_of_respondent": gender,
-        "type_of_location": location,
+        "gender_of_respondent": gender_val,
+        "type_of_location": location_val,
         "level_of_educuation": education,
         "type_of_job": job,
         "marital_status": marital,
         "the_relathip_with_head": relation,
-        "cell_phone_access": phone
+        "cell_phone_access": phone_val
     }])
 
     user_encoded = preprocess_user_input(user, X_columns)
-
     proba = model.predict_proba(user_encoded)[0][1]
 
-    st.success(f"💳 Probabilité de posséder un compte bancaire : **{proba:.1%}**")
+    st.markdown(f"""
+        <div style='
+            background-color:#EAF8F0;
+            padding:20px;
+            border-radius:10px;
+            text-align:center;
+            font-size:18px;
+            font-weight:bold;
+            margin-top:10px;
+        '>
+            💳 Probabilité de posséder un compte bancaire : {proba:.1%}
+        </div>
+    """, unsafe_allow_html=True)
