@@ -86,4 +86,4 @@ if submit:
     user_encoded = preprocess_user_input(user, X_columns)
     proba = model.predict_proba(user_encoded)[0][1]
 
-    st.markdown(f"💳 Probabilité de posséder un compte bancaire : {proba:.1%}")
+    st.success(f"💳 Probabilité de posséder un compte bancaire : {proba:.1%}")
