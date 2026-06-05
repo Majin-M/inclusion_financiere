@@ -435,10 +435,10 @@ Kenya,2018,uniqueid_433,No,Rural,No,6.0,70.0,Female,Spouse,Married/Living togeth
 Kenya,2018,uniqueid_434,Yes,Rural,Yes,7.0,54.0,Male,Head of Household,Married/Living together,Primary education,Farming and Fishing
 Kenya,2018,uniqueid_435,No,Rural,Yes,3.0,30.0,Male,Head of Household,Widowed,Primary education,Farming and Fishing
 Kenya,2018,uniqueid_436,No,Urban,No,2.0,50.0,Female,Head of Household,Married/Living together,Primary education,Informally employed
-Kenya,2018,uniqueid_437,No,Rural,Yes,2.0,35.0,Unknown,Head of Household,Widowed,Primary education,Farming and Fishing
-Kenya,2018,uniqueid_438,No,Rural,Yes,1.0,35.0,Unknown,Head of Household,Married/Living together,Primary education,Farming and Fishing
-Kenya,2018,uniqueid_439,Yes,Urban,Yes,2.0,35.0,Unknown,Head of Household,Married/Living together,Primary education,Formally employed Government
-Kenya,2018,uniqueid_440,No,Rural,Yes,10.0,35.0,Unknown,Spouse,Married/Living together,Primary education,Farming and Fishing
+Kenya,2018,uniqueid_437,No,Rural,Yes,2.0,,,Head of Household,Widowed,Primary education,Farming and Fishing
+Kenya,2018,uniqueid_438,No,Rural,Yes,1.0,,,Head of Household,Married/Living together,Primary education,Farming and Fishing
+Kenya,2018,uniqueid_439,Yes,Urban,Yes,2.0,,,Head of Household,Married/Living together,Primary education,Formally employed Government
+Kenya,2018,uniqueid_440,No,Rural,Yes,10.0,,,Spouse,Married/Living together,Primary education,Farming and Fishing
 Kenya,2018,uniqueid_441,Yes,Urban,Yes,3.0,25.0,Female,Spouse,Married/Living together,Secondary education,Remittance Dependent
 Kenya,2018,uniqueid_442,No,Rural,No,5.0,19.0,Male,Other relative,Single/Never Married,Secondary education,Remittance Dependent
 Kenya,2018,uniqueid_443,No,Rural,No,8.0,16.0,Male,Child,Single/Never Married,Primary education,Remittance Dependent
@@ -7280,9 +7280,9 @@ Rwanda,2016,uniqueid_1210,No,Rural,Yes,4.0,30.0,Female,Spouse,Married/Living tog
 Rwanda,2016,uniqueid_1211,No,Rural,No,5.0,36.0,Male,Head of Household,Married/Living together,No formal education,Farming and Fishing
 Rwanda,2016,uniqueid_1212,No,Rural,No,2.0,65.0,Female,Head of Household,Widowed,No formal education,Remittance Dependent
 Rwanda,2016,uniqueid_1213,No,Rural,Yes,2.0,53.0,Female,Head of Household,Widowed,No formal education,Informally employed
-Rwanda,2016,uniqueid_1214,No,Rural,Yes,4.0,35.0,Male,Head of Household,Married/Living together,Primary education,Informally employed
-Rwanda,2016,uniqueid_1215,No,Rural,No,7.0,35.0,Female,Spouse,Married/Living together,Primary education,Informally employed
-Rwanda,2016,uniqueid_1216,No,Rural,Yes,8.0,35.0,Female,Spouse,Divorced/Seperated,No formal education,Farming and Fishing
+Rwanda,2016,uniqueid_1214,No,Rural,Yes,4.0,,Male,Head of Household,Married/Living together,Primary education,Informally employed
+Rwanda,2016,uniqueid_1215,No,Rural,No,7.0,,Female,Spouse,Married/Living together,Primary education,Informally employed
+Rwanda,2016,uniqueid_1216,No,Rural,Yes,8.0,,Female,Spouse,Divorced/Seperated,No formal education,Farming and Fishing
 Rwanda,2016,uniqueid_1217,No,Rural,Yes,3.0,54.0,Female,Head of Household,Widowed,Primary education,Informally employed
 Rwanda,2016,uniqueid_1218,Yes,Urban,Yes,7.0,52.0,Female,Spouse,Married/Living together,Secondary education,Farming and Fishing
 Rwanda,2016,uniqueid_1219,No,Rural,Yes,3.0,31.0,Male,Head of Household,Married/Living together,Primary education,Farming and Fishing
@@ -13269,19 +13269,19 @@ Rwanda,2016,uniqueid_7199,No,Rural,Yes,2.0,55.0,Female,Head of Household,Widowed
 Rwanda,2016,uniqueid_7200,No,Rural,No,7.0,33.0,Female,Spouse,Married/Living together,No formal education,Government Dependent
 Rwanda,2016,uniqueid_7201,No,Rural,Yes,6.0,43.0,Male,Head of Household,Married/Living together,Secondary education,Farming and Fishing
 Rwanda,2016,uniqueid_7202,No,Rural,Yes,3.0,23.0,Female,Spouse,Married/Living together,Primary education,Informally employed
-Rwanda,2016,uniqueid_7203,No,Rural,Yes,3.0,35.0,Female,Head of Household,Widowed,No formal education,Farming and Fishing
-Rwanda,2016,uniqueid_7204,Yes,Urban,Yes,5.0,35.0,Male,Head of Household,Married/Living together,Tertiary education,Informally employed
-Rwanda,2016,uniqueid_7205,No,Urban,Yes,9.0,35.0,Female,Spouse,Married/Living together,Secondary education,Self employed
-Rwanda,2016,uniqueid_7206,No,Rural,Yes,4.0,35.0,Female,Child,Single/Never Married,Primary education,Farming and Fishing
-Rwanda,2016,uniqueid_7207,No,Rural,Yes,2.0,35.0,Female,Head of Household,Divorced/Seperated,No formal education,Farming and Fishing
-Rwanda,2016,uniqueid_7208,No,Rural,Yes,3.0,35.0,Female,Child,Single/Never Married,Secondary education,Farming and Fishing
+Rwanda,2016,uniqueid_7203,No,Rural,Yes,3.0,,Female,Head of Household,Widowed,No formal education,Farming and Fishing
+Rwanda,2016,uniqueid_7204,Yes,Urban,Yes,5.0,,Male,Head of Household,Married/Living together,Tertiary education,Informally employed
+Rwanda,2016,uniqueid_7205,No,Urban,Yes,9.0,,Female,Spouse,Married/Living together,Secondary education,Self employed
+Rwanda,2016,uniqueid_7206,No,Rural,Yes,4.0,,Female,Child,Single/Never Married,Primary education,Farming and Fishing
+Rwanda,2016,uniqueid_7207,No,Rural,Yes,2.0,,Female,Head of Household,Divorced/Seperated,No formal education,Farming and Fishing
+Rwanda,2016,uniqueid_7208,No,Rural,Yes,3.0,,Female,Child,Single/Never Married,Secondary education,Farming and Fishing
 Rwanda,2016,uniqueid_7209,No,Rural,Yes,4.0,20.0,Female,Spouse,Married/Living together,Primary education,Farming and Fishing
 Rwanda,2016,uniqueid_7210,Yes,Urban,Yes,7.0,38.0,Male,Head of Household,Married/Living together,Primary education,Formally employed Private
 Rwanda,2016,uniqueid_7211,No,Rural,Yes,3.0,21.0,Female,Spouse,Married/Living together,Primary education,Farming and Fishing
-Rwanda,2016,uniqueid_7212,No,Rural,Yes,3.0,27.0,Female,Spouse,Married/Living together,Primary education,Informally employed
-Rwanda,2016,uniqueid_7213,No,Rural,Yes,3.0,78.0,Female,Head of Household,Widowed,No formal education,Farming and Fishing
-Rwanda,2016,uniqueid_7214,No,Rural,Yes,3.0,35.0,Male,Head of Household,Married/Living together,No formal education,Informally employed
-Rwanda,2016,uniqueid_7215,No,Rural,Yes,3.0,55.0,Male,Head of Household,Married/Living together,No formal education,Informally employed
+Rwanda,2016,uniqueid_7212,No,Rural,Yes,,27.0,Female,Spouse,Married/Living together,Primary education,Informally employed
+Rwanda,2016,uniqueid_7213,No,Rural,Yes,,78.0,Female,Head of Household,Widowed,No formal education,Farming and Fishing
+Rwanda,2016,uniqueid_7214,No,Rural,Yes,,35.0,Male,Head of Household,Married/Living together,No formal education,Informally employed
+Rwanda,2016,uniqueid_7215,No,Rural,Yes,,55.0,Male,Head of Household,Married/Living together,No formal education,Informally employed
 Rwanda,2016,uniqueid_7216,No,Rural,Yes,5.0,34.0,Male,Head of Household,Married/Living together,No formal education,Informally employed
 Rwanda,2016,uniqueid_7217,No,Rural,Yes,6.0,44.0,Male,Head of Household,Married/Living together,Secondary education,Formally employed Private
 Rwanda,2016,uniqueid_7218,No,Rural,Yes,4.0,28.0,Female,Spouse,Married/Living together,Primary education,Farming and Fishing
@@ -13370,10 +13370,10 @@ Rwanda,2016,uniqueid_7300,No,Rural,Yes,4.0,60.0,Male,Head of Household,Married/L
 Rwanda,2016,uniqueid_7301,No,Rural,No,1.0,75.0,Female,Head of Household,Widowed,No formal education,Farming and Fishing
 Rwanda,2016,uniqueid_7302,No,Rural,Yes,6.0,57.0,Female,Child,Widowed,Primary education,Farming and Fishing
 Rwanda,2016,uniqueid_7303,No,Rural,Yes,4.0,28.0,Female,Spouse,Married/Living together,Primary education,Farming and Fishing
-Rwanda,2016,uniqueid_7304,No,Rural,No,3.0,21.0,Female,Head of Household,Married/Living together,Primary education,Informally employed
-Rwanda,2016,uniqueid_7305,No,Rural,Yes,3.0,23.0,Female,Spouse,Married/Living together,Primary education,Informally employed
-Rwanda,2016,uniqueid_7306,No,Rural,No,3.0,38.0,Female,Spouse,Married/Living together,Primary education,Informally employed
-Rwanda,2016,uniqueid_7307,Yes,Urban,Yes,3.0,32.0,Male,Head of Household,Married/Living together,Primary education,Self employed
+Rwanda,2016,uniqueid_7304,No,Rural,No,,21.0,Female,Head of Household,Married/Living together,Primary education,Informally employed
+Rwanda,2016,uniqueid_7305,No,Rural,Yes,,23.0,Female,Spouse,Married/Living together,Primary education,Informally employed
+Rwanda,2016,uniqueid_7306,No,Rural,No,,38.0,Female,Spouse,Married/Living together,Primary education,Informally employed
+Rwanda,2016,uniqueid_7307,Yes,Urban,Yes,,32.0,Male,Head of Household,Married/Living together,Primary education,Self employed
 Rwanda,2016,uniqueid_7308,No,Rural,Yes,7.0,42.0,Male,Head of Household,Married/Living together,Secondary education,Farming and Fishing
 Rwanda,2016,uniqueid_7309,No,Rural,No,3.0,55.0,Female,Spouse,Married/Living together,No formal education,Informally employed
 Rwanda,2016,uniqueid_7310,No,Urban,Yes,5.0,21.0,Female,Child,Single/Never Married,Primary education,Farming and Fishing
@@ -13460,18 +13460,18 @@ Rwanda,2016,uniqueid_7390,No,Rural,Yes,5.0,35.0,Male,Head of Household,Married/L
 Rwanda,2016,uniqueid_7391,No,Rural,No,1.0,65.0,Male,Head of Household,Widowed,Primary education,Informally employed
 Rwanda,2016,uniqueid_7392,Yes,Rural,Yes,4.0,25.0,Female,Spouse,Married/Living together,Secondary education,Remittance Dependent
 Rwanda,2016,uniqueid_7393,No,Rural,No,2.0,83.0,Female,Head of Household,Widowed,No formal education,Government Dependent
-Rwanda,2016,uniqueid_7394,No,Rural,No,1.0,74.0,Male,Head of Household,Divorced/Seperated,Unknown,Unknown
-Rwanda,2016,uniqueid_7395,No,Rural,Yes,4.0,31.0,Female,Head of Household,Divorced/Seperated,Unknown,Unknown
-Rwanda,2016,uniqueid_7396,No,Rural,Yes,3.0,53.0,Female,Head of Household,Divorced/Seperated,Unknown,Unknown
-Rwanda,2016,uniqueid_7397,No,Rural,Yes,5.0,63.0,Male,Head of Household,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7398,No,Urban,Yes,3.0,49.0,Female,Head of Household,Widowed,Unknown,Unknown
-Rwanda,2016,uniqueid_7399,Yes,Rural,Yes,9.0,35.0,Female,Head of Household,Widowed,Unknown,Unknown
-Rwanda,2016,uniqueid_7400,No,Rural,Yes,3.0,35.0,Male,Head of Household,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7401,No,Rural,Yes,3.0,35.0,Female,Spouse,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7402,No,Rural,Yes,2.0,35.0,Female,Head of Household,Widowed,Unknown,Unknown
-Rwanda,2016,uniqueid_7403,No,Rural,Yes,3.0,30.0,Male,Head of Household,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7404,No,Rural,No,2.0,64.0,Female,Head of Household,Widowed,Unknown,Unknown
-Rwanda,2016,uniqueid_7405,Yes,Urban,Yes,6.0,45.0,Male,Head of Household,Married/Living together,Unknown,Unknown
+Rwanda,2016,uniqueid_7394,No,Rural,No,1.0,74.0,Male,Head of Household,Divorced/Seperated,,
+Rwanda,2016,uniqueid_7395,No,Rural,Yes,4.0,31.0,Female,Head of Household,Divorced/Seperated,,
+Rwanda,2016,uniqueid_7396,No,Rural,Yes,3.0,53.0,Female,Head of Household,Divorced/Seperated,,
+Rwanda,2016,uniqueid_7397,No,Rural,Yes,5.0,63.0,Male,Head of Household,Married/Living together,,
+Rwanda,2016,uniqueid_7398,No,Urban,Yes,3.0,49.0,Female,Head of Household,Widowed,,
+Rwanda,2016,uniqueid_7399,Yes,Rural,Yes,9.0,,Female,Head of Household,Widowed,,
+Rwanda,2016,uniqueid_7400,No,Rural,Yes,3.0,,Male,Head of Household,Married/Living together,,
+Rwanda,2016,uniqueid_7401,No,Rural,Yes,3.0,,Female,Spouse,Married/Living together,,
+Rwanda,2016,uniqueid_7402,No,Rural,Yes,2.0,,Female,Head of Household,Widowed,,
+Rwanda,2016,uniqueid_7403,No,Rural,Yes,3.0,30.0,Male,Head of Household,Married/Living together,,
+Rwanda,2016,uniqueid_7404,No,Rural,No,2.0,64.0,Female,Head of Household,Widowed,,
+Rwanda,2016,uniqueid_7405,Yes,Urban,Yes,6.0,45.0,Male,Head of Household,Married/Living together,,
 Rwanda,2016,uniqueid_7406,No,Rural,No,1.0,40.0,Female,Head of Household,Single/Never Married,No formal education,Informally employed
 Rwanda,2016,uniqueid_7407,No,Rural,Yes,4.0,70.0,Female,Spouse,Married/Living together,No formal education,Farming and Fishing
 Rwanda,2016,uniqueid_7408,No,Rural,Yes,5.0,60.0,Female,Head of Household,Widowed,Primary education,Farming and Fishing
@@ -13564,15 +13564,15 @@ Rwanda,2016,uniqueid_7494,No,Rural,Yes,5.0,26.0,Female,Spouse,Married/Living tog
 Rwanda,2016,uniqueid_7495,No,Rural,Yes,5.0,33.0,Male,Head of Household,Married/Living together,Primary education,Informally employed
 Rwanda,2016,uniqueid_7496,No,Rural,No,2.0,77.0,Female,Spouse,Married/Living together,No formal education,Farming and Fishing
 Rwanda,2016,uniqueid_7497,No,Rural,Yes,4.0,40.0,Female,Head of Household,Widowed,No formal education,Farming and Fishing
-Rwanda,2016,uniqueid_7498,No,Urban,Yes,4.0,34.0,Male,Head of Household,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7499,No,Rural,Yes,7.0,43.0,Female,Spouse,Divorced/Seperated,Unknown,Unknown
-Rwanda,2016,uniqueid_7500,No,Rural,Yes,3.0,26.0,Female,Spouse,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7501,No,Rural,Yes,4.0,30.0,Male,Head of Household,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7502,No,Rural,Yes,4.0,28.0,Female,Spouse,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7503,No,Urban,Yes,7.0,21.0,Male,Child,Single/Never Married,Unknown,Unknown
-Rwanda,2016,uniqueid_7504,No,Rural,No,4.0,47.0,Female,Head of Household,Divorced/Seperated,Unknown,Unknown
-Rwanda,2016,uniqueid_7505,No,Rural,Yes,5.0,53.0,Female,Spouse,Married/Living together,Unknown,Unknown
-Rwanda,2016,uniqueid_7506,No,Rural,Yes,5.0,34.0,Female,Spouse,Married/Living together,Unknown,Unknown
+Rwanda,2016,uniqueid_7498,No,Urban,Yes,4.0,34.0,Male,Head of Household,Married/Living together,,
+Rwanda,2016,uniqueid_7499,No,Rural,Yes,7.0,43.0,Female,Spouse,Divorced/Seperated,,
+Rwanda,2016,uniqueid_7500,No,Rural,Yes,3.0,26.0,Female,Spouse,Married/Living together,,
+Rwanda,2016,uniqueid_7501,No,Rural,Yes,4.0,30.0,Male,Head of Household,Married/Living together,,
+Rwanda,2016,uniqueid_7502,No,Rural,Yes,4.0,28.0,Female,Spouse,Married/Living together,,
+Rwanda,2016,uniqueid_7503,No,Urban,Yes,7.0,21.0,Male,Child,Single/Never Married,,
+Rwanda,2016,uniqueid_7504,No,Rural,No,4.0,47.0,Female,Head of Household,Divorced/Seperated,,
+Rwanda,2016,uniqueid_7505,No,Rural,Yes,5.0,53.0,Female,Spouse,Married/Living together,,
+Rwanda,2016,uniqueid_7506,No,Rural,Yes,5.0,34.0,Female,Spouse,Married/Living together,,
 Rwanda,2016,uniqueid_7507,No,Rural,Yes,4.0,30.0,Female,Spouse,Married/Living together,Primary education,Farming and Fishing
 Rwanda,2016,uniqueid_7508,No,Rural,Yes,3.0,65.0,Female,Head of Household,Widowed,Primary education,Self employed
 Rwanda,2016,uniqueid_7509,Yes,Rural,Yes,4.0,38.0,Male,Head of Household,Married/Living together,Tertiary education,Formally employed Government
@@ -13616,12 +13616,12 @@ Rwanda,2016,uniqueid_7546,No,Rural,Yes,6.0,34.0,Female,Spouse,Married/Living tog
 Rwanda,2016,uniqueid_7547,No,Rural,Yes,5.0,45.0,Female,Head of Household,Widowed,Primary education,Farming and Fishing
 Rwanda,2016,uniqueid_7548,No,Rural,No,1.0,75.0,Female,Head of Household,Widowed,No formal education,Farming and Fishing
 Rwanda,2016,uniqueid_7549,No,Rural,No,2.0,23.0,Male,Parent,Divorced/Seperated,No formal education,Farming and Fishing
-Rwanda,2016,uniqueid_7550,No,Rural,No,1.0,87.0,Female,Head of Household,Unknown,No formal education,Remittance Dependent
-Rwanda,2016,uniqueid_7551,No,Rural,Yes,4.0,31.0,Male,Head of Household,Unknown,Primary education,Informally employed
-Rwanda,2016,uniqueid_7552,No,Urban,Yes,7.0,36.0,Female,Spouse,Unknown,Primary education,Informally employed
-Rwanda,2016,uniqueid_7553,No,Rural,Yes,5.0,68.0,Female,Head of Household,Unknown,No formal education,Dont Know/Refuse to answer
-Rwanda,2016,uniqueid_7554,No,Rural,No,6.0,17.0,Male,Child,Unknown,Secondary education,Remittance Dependent
-Rwanda,2016,uniqueid_7555,Yes,Urban,Yes,2.0,22.0,Female,Head of Household,Unknown,Primary education,Informally employed
+Rwanda,2016,uniqueid_7550,No,Rural,No,1.0,87.0,Female,Head of Household,,No formal education,Remittance Dependent
+Rwanda,2016,uniqueid_7551,No,Rural,Yes,4.0,31.0,Male,Head of Household,,Primary education,Informally employed
+Rwanda,2016,uniqueid_7552,No,Urban,Yes,7.0,36.0,Female,Spouse,,Primary education,Informally employed
+Rwanda,2016,uniqueid_7553,No,Rural,Yes,5.0,68.0,Female,Head of Household,,No formal education,Dont Know/Refuse to answer
+Rwanda,2016,uniqueid_7554,No,Rural,No,6.0,17.0,Male,Child,,Secondary education,Remittance Dependent
+Rwanda,2016,uniqueid_7555,Yes,Urban,Yes,2.0,22.0,Female,Head of Household,,Primary education,Informally employed
 Rwanda,2016,uniqueid_7556,No,Rural,Yes,5.0,16.0,Male,Child,Single/Never Married,Primary education,Informally employed
 Rwanda,2016,uniqueid_7557,No,Rural,Yes,6.0,30.0,Female,Spouse,Married/Living together,Primary education,Farming and Fishing
 Rwanda,2016,uniqueid_7558,No,Rural,Yes,3.0,26.0,Female,Spouse,Married/Living together,Primary education,Informally employed
@@ -13643,13 +13643,13 @@ Rwanda,2016,uniqueid_7573,No,Rural,Yes,3.0,35.0,Female,Head of Household,Widowed
 Rwanda,2016,uniqueid_7574,Yes,Rural,Yes,3.0,67.0,Female,Spouse,Married/Living together,Primary education,Farming and Fishing
 Rwanda,2016,uniqueid_7575,No,Rural,Yes,2.0,65.0,Female,Head of Household,Widowed,No formal education,Farming and Fishing
 Rwanda,2016,uniqueid_7576,No,Rural,Yes,4.0,55.0,Female,Head of Household,Divorced/Seperated,Primary education,Farming and Fishing
-Rwanda,2016,uniqueid_7577,No,Rural,Yes,2.0,73.0,Male,Head of Household,Unknown,No formal education,Remittance Dependent
-Rwanda,2016,uniqueid_7578,No,Urban,Yes,5.0,34.0,Male,Head of Household,Unknown,Primary education,Farming and Fishing
-Rwanda,2016,uniqueid_7579,No,Rural,No,3.0,37.0,Female,Head of Household,Unknown,No formal education,Informally employed
-Rwanda,2016,uniqueid_7580,Yes,Rural,Yes,5.0,33.0,Male,Head of Household,Unknown,Primary education,Self employed
-Rwanda,2016,uniqueid_7581,No,Rural,Yes,3.0,25.0,Male,Head of Household,Unknown,Primary education,Informally employed
-Rwanda,2016,uniqueid_7582,No,Rural,Yes,7.0,42.0,Male,Head of Household,Unknown,Primary education,Informally employed
-Rwanda,2016,uniqueid_7583,No,Rural,Yes,4.0,45.0,Female,Head of Household,Unknown,Primary education,Farming and Fishing
+Rwanda,2016,uniqueid_7577,No,Rural,Yes,2.0,73.0,Male,Head of Household,,No formal education,Remittance Dependent
+Rwanda,2016,uniqueid_7578,No,Urban,Yes,5.0,34.0,Male,Head of Household,,Primary education,Farming and Fishing
+Rwanda,2016,uniqueid_7579,No,Rural,No,3.0,37.0,Female,Head of Household,,No formal education,Informally employed
+Rwanda,2016,uniqueid_7580,Yes,Rural,Yes,5.0,33.0,Male,Head of Household,,Primary education,Self employed
+Rwanda,2016,uniqueid_7581,No,Rural,Yes,3.0,25.0,Male,Head of Household,,Primary education,Informally employed
+Rwanda,2016,uniqueid_7582,No,Rural,Yes,7.0,42.0,Male,Head of Household,,Primary education,Informally employed
+Rwanda,2016,uniqueid_7583,No,Rural,Yes,4.0,45.0,Female,Head of Household,,Primary education,Farming and Fishing
 Rwanda,2016,uniqueid_7584,No,Rural,Yes,1.0,66.0,Female,Head of Household,Widowed,No formal education,Informally employed
 Rwanda,2016,uniqueid_7585,No,Rural,Yes,5.0,35.0,Female,Spouse,Married/Living together,Primary education,Farming and Fishing
 Rwanda,2016,uniqueid_7586,No,Rural,Yes,8.0,16.0,Female,Child,Single/Never Married,Secondary education,Informally employed
@@ -16426,17 +16426,17 @@ Tanzania,2017,uniqueid_1621,No,Urban,Yes,1.0,57.0,Female,Head of Household,Widow
 Tanzania,2017,uniqueid_1622,No,Urban,Yes,1.0,60.0,Female,Head of Household,Widowed,Primary education,Formally employed Private
 Tanzania,2017,uniqueid_1623,No,Urban,No,2.0,50.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_1624,No,Rural,Yes,2.0,22.0,Female,Spouse,Single/Never Married,Primary education,Remittance Dependent
-Tanzania,2017,uniqueid_1625,No,Unknown,Yes,2.0,20.0,Male,Parent,Divorced/Seperated,No formal education,Self employed
+Tanzania,2017,uniqueid_1625,No,,Yes,2.0,20.0,Male,Parent,Divorced/Seperated,No formal education,Self employed
 Tanzania,2017,uniqueid_1626,No,Rural,No,4.0,16.0,Female,Other relative,Divorced/Seperated,Secondary education,Remittance Dependent
 Tanzania,2017,uniqueid_1627,No,Rural,No,1.0,18.0,Male,Other relative,Divorced/Seperated,Secondary education,No Income
 Tanzania,2017,uniqueid_1628,Yes,Rural,Yes,4.0,56.0,Male,Head of Household,Single/Never Married,Primary education,Formally employed Private
 Tanzania,2017,uniqueid_1629,No,Rural,Yes,1.0,67.0,Female,Head of Household,Married/Living together,Primary education,Informally employed
 Tanzania,2017,uniqueid_1630,No,Rural,Yes,3.0,22.0,Female,Parent,Single/Never Married,Tertiary education,Remittance Dependent
 Tanzania,2017,uniqueid_1631,No,Urban,Yes,2.0,25.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_1632,No,Urban,No,2.0,50.0,Unknown,Head of Household,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_1632,No,Urban,No,2.0,50.0,,Head of Household,Single/Never Married,No formal education,Self employed
 Tanzania,2017,uniqueid_1633,No,Urban,Yes,2.0,24.0,Male,Head of Household,Single/Never Married,Tertiary education,Self employed
 Tanzania,2017,uniqueid_1634,No,Rural,Yes,1.0,40.0,Female,Head of Household,Widowed,Primary education,Self employed
-Tanzania,2017,uniqueid_1635,No,Urban,Yes,2.0,41.0,Female,Spouse,Single/Never Married,Primary education,Unknown
+Tanzania,2017,uniqueid_1635,No,Urban,Yes,2.0,41.0,Female,Spouse,Single/Never Married,Primary education,
 Tanzania,2017,uniqueid_1636,No,Urban,No,5.0,17.0,Female,Parent,Divorced/Seperated,Secondary education,Remittance Dependent
 Tanzania,2017,uniqueid_1637,No,Urban,Yes,2.0,63.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_1638,No,Urban,No,2.0,35.0,Female,Spouse,Single/Never Married,Primary education,Self employed
@@ -16450,7 +16450,7 @@ Tanzania,2017,uniqueid_1645,No,Rural,Yes,2.0,23.0,Female,Spouse,Single/Never Mar
 Tanzania,2017,uniqueid_1646,No,Urban,Yes,1.0,30.0,Female,Head of Household,Divorced/Seperated,Tertiary education,Self employed
 Tanzania,2017,uniqueid_1647,No,Rural,Yes,2.0,18.0,Female,Other relative,Divorced/Seperated,Tertiary education,Remittance Dependent
 Tanzania,2017,uniqueid_1648,No,Urban,No,2.0,22.0,Female,Spouse,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_1649,No,Unknown,Yes,2.0,43.0,Male,Head of Household,Single/Never Married,No formal education,Informally employed
+Tanzania,2017,uniqueid_1649,No,,Yes,2.0,43.0,Male,Head of Household,Single/Never Married,No formal education,Informally employed
 Tanzania,2017,uniqueid_1650,No,Rural,Yes,2.0,21.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_1651,No,Urban,Yes,1.0,17.0,Female,Child,Divorced/Seperated,Primary education,Remittance Dependent
 Tanzania,2017,uniqueid_1652,No,Urban,No,2.0,26.0,Male,Spouse,Single/Never Married,No formal education,Self employed
@@ -16512,9 +16512,9 @@ Tanzania,2017,uniqueid_1707,No,Urban,Yes,0.0,23.0,Female,Parent,Divorced/Seperat
 Tanzania,2017,uniqueid_1708,No,Urban,No,1.0,20.0,Male,Head of Household,Divorced/Seperated,Primary education,Self employed
 Tanzania,2017,uniqueid_1709,No,Urban,Yes,2.0,57.0,Female,Spouse,Single/Never Married,No formal education,Self employed
 Tanzania,2017,uniqueid_1710,No,Urban,Yes,4.0,39.0,Female,Parent,Married/Living together,Secondary education,Self employed
-Tanzania,2017,uniqueid_1711,No,Unknown,No,1.0,49.0,Female,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_1711,No,,No,1.0,49.0,Female,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_1712,No,Rural,Yes,2.0,25.0,Female,Other relative,Divorced/Seperated,Primary education,Formally employed Private
-Tanzania,2017,uniqueid_1713,No,Urban,No,3.0,30.0,Female,Head of Household,Unknown,Primary education,Self employed
+Tanzania,2017,uniqueid_1713,No,Urban,No,,30.0,Female,Head of Household,,Primary education,Self employed
 Tanzania,2017,uniqueid_1714,No,Urban,Yes,1.0,65.0,Female,Head of Household,Widowed,Primary education,Self employed
 Tanzania,2017,uniqueid_1715,Yes,Rural,Yes,1.0,25.0,Male,Head of Household,Divorced/Seperated,Tertiary education,Self employed
 Tanzania,2017,uniqueid_1716,Yes,Urban,Yes,1.0,31.0,Male,Head of Household,Divorced/Seperated,Vocational/Specialised training,Formally employed Private
@@ -16581,7 +16581,7 @@ Tanzania,2017,uniqueid_1776,No,Urban,No,3.0,52.0,Female,Spouse,Single/Never Marr
 Tanzania,2017,uniqueid_1777,No,Rural,Yes,1.0,18.0,Male,Other relative,Divorced/Seperated,Primary education,Formally employed Private
 Tanzania,2017,uniqueid_1778,Yes,Urban,Yes,2.0,73.0,Female,Head of Household,Widowed,Primary education,Government Dependent
 Tanzania,2017,uniqueid_1779,No,Urban,No,2.0,17.0,Male,Other relative,Divorced/Seperated,Primary education,No Income
-Tanzania,2017,uniqueid_1780,No,Unknown,Yes,1.0,36.0,Female,Spouse,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_1780,No,,Yes,1.0,36.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_1781,No,Urban,Yes,1.0,28.0,Male,Head of Household,Single/Never Married,Tertiary education,Informally employed
 Tanzania,2017,uniqueid_1782,No,Rural,Yes,2.0,20.0,Female,Head of Household,Divorced/Seperated,Primary education,Formally employed Private
 Tanzania,2017,uniqueid_1783,No,Rural,Yes,1.0,34.0,Female,Head of Household,Married/Living together,Primary education,Self employed
@@ -16593,7 +16593,7 @@ Tanzania,2017,uniqueid_1788,No,Rural,No,1.0,41.0,Female,Head of Household,Widowe
 Tanzania,2017,uniqueid_1789,No,Rural,Yes,1.0,55.0,Female,Spouse,Single/Never Married,Primary education,Informally employed
 Tanzania,2017,uniqueid_1790,No,Rural,Yes,1.0,33.0,Male,Head of Household,Divorced/Seperated,Secondary education,Self employed
 Tanzania,2017,uniqueid_1791,No,Urban,No,2.0,50.0,Female,Spouse,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_1792,No,Urban,No,2.0,35.0,Female,Spouse,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_1792,No,Urban,No,2.0,,Female,Spouse,Single/Never Married,No formal education,Self employed
 Tanzania,2017,uniqueid_1793,No,Urban,No,2.0,21.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_1794,Yes,Urban,Yes,2.0,29.0,Male,Head of Household,Single/Never Married,Vocational/Specialised training,Formally employed Private
 Tanzania,2017,uniqueid_1795,No,Urban,No,2.0,40.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
@@ -16683,7 +16683,7 @@ Tanzania,2017,uniqueid_1878,No,Urban,No,3.0,40.0,Female,Spouse,Single/Never Marr
 Tanzania,2017,uniqueid_1879,Yes,Rural,Yes,1.0,44.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_1880,No,Urban,Yes,2.0,34.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_1881,No,Rural,No,5.0,52.0,Female,Head of Household,Widowed,No formal education,Self employed
-Tanzania,2017,uniqueid_1882,No,Urban,Yes,1.0,53.0,Unknown,Head of Household,Widowed,Primary education,Self employed
+Tanzania,2017,uniqueid_1882,No,Urban,Yes,1.0,53.0,,Head of Household,Widowed,Primary education,Self employed
 Tanzania,2017,uniqueid_1883,No,Urban,Yes,3.0,18.0,Male,Parent,Divorced/Seperated,No formal education,Self employed
 Tanzania,2017,uniqueid_1884,No,Urban,Yes,2.0,25.0,Female,Spouse,Single/Never Married,Primary education,Remittance Dependent
 Tanzania,2017,uniqueid_1885,No,Urban,No,2.0,32.0,Female,Spouse,Single/Never Married,Primary education,Self employed
@@ -16854,10 +16854,10 @@ Tanzania,2017,uniqueid_2049,No,Urban,No,5.0,30.0,Female,Spouse,Single/Never Marr
 Tanzania,2017,uniqueid_2050,No,Rural,Yes,1.0,34.0,Male,Head of Household,Divorced/Seperated,Primary education,Self employed
 Tanzania,2017,uniqueid_2051,No,Rural,Yes,1.0,23.0,Female,Head of Household,Divorced/Seperated,Tertiary education,Formally employed Private
 Tanzania,2017,uniqueid_2052,Yes,Rural,Yes,1.0,32.0,Male,Head of Household,Single/Never Married,Vocational/Specialised training,Formally employed Private
-Tanzania,2017,uniqueid_2053,No,Rural,Yes,3.0,35.0,Unknown,Unknown,Unknown,Tertiary education,Informally employed
-Tanzania,2017,uniqueid_2054,No,Urban,No,3.0,35.0,Unknown,Unknown,Unknown,Primary education,Informally employed
-Tanzania,2017,uniqueid_2055,No,Urban,Yes,3.0,35.0,Unknown,Unknown,Unknown,Primary education,Self employed
-Tanzania,2017,uniqueid_2056,No,Urban,No,3.0,35.0,Unknown,Unknown,Unknown,Primary education,Informally employed
+Tanzania,2017,uniqueid_2053,No,Rural,Yes,,,,,,Tertiary education,Informally employed
+Tanzania,2017,uniqueid_2054,No,Urban,No,,,,,,Primary education,Informally employed
+Tanzania,2017,uniqueid_2055,No,Urban,Yes,,,,,,Primary education,Self employed
+Tanzania,2017,uniqueid_2056,No,Urban,No,,,,,,Primary education,Informally employed
 Tanzania,2017,uniqueid_2057,No,Rural,Yes,3.0,18.0,Male,Parent,Divorced/Seperated,Primary education,Self employed
 Tanzania,2017,uniqueid_2058,No,Rural,Yes,2.0,20.0,Female,Child,Divorced/Seperated,Tertiary education,Informally employed
 Tanzania,2017,uniqueid_2059,No,Urban,Yes,2.0,38.0,Female,Head of Household,Single/Never Married,Primary education,Remittance Dependent
@@ -16947,10 +16947,10 @@ Tanzania,2017,uniqueid_2142,No,Rural,Yes,1.0,35.0,Female,Spouse,Single/Never Mar
 Tanzania,2017,uniqueid_2143,Yes,Rural,Yes,2.0,34.0,Female,Spouse,Single/Never Married,Vocational/Specialised training,Formally employed Private
 Tanzania,2017,uniqueid_2144,No,Urban,No,1.0,17.0,Male,Parent,Divorced/Seperated,Secondary education,Remittance Dependent
 Tanzania,2017,uniqueid_2145,No,Urban,No,2.0,44.0,Male,Head of Household,Single/Never Married,No formal education,Informally employed
-Tanzania,2017,uniqueid_2146,Unknown,Unknown,Unknown,1.0,65.0,Female,Head of Household,Married/Living together,Primary education,Informally employed
-Tanzania,2017,uniqueid_2147,Unknown,Unknown,Unknown,2.0,27.0,Male,Other relative,Divorced/Seperated,Tertiary education,Informally employed
-Tanzania,2017,uniqueid_2148,Unknown,Unknown,Unknown,1.0,36.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_2149,Unknown,Unknown,Unknown,2.0,30.0,Female,Spouse,Single/Never Married,No formal education,Informally employed
+Tanzania,2017,uniqueid_2146,,,,1.0,65.0,Female,Head of Household,Married/Living together,Primary education,Informally employed
+Tanzania,2017,uniqueid_2147,,,,2.0,27.0,Male,Other relative,Divorced/Seperated,Tertiary education,Informally employed
+Tanzania,2017,uniqueid_2148,,,,1.0,36.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_2149,,,,2.0,30.0,Female,Spouse,Single/Never Married,No formal education,Informally employed
 Tanzania,2017,uniqueid_2150,No,Rural,Yes,1.0,44.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2151,No,Rural,Yes,1.0,23.0,Male,Head of Household,Divorced/Seperated,Primary education,Self employed
 Tanzania,2017,uniqueid_2152,No,Urban,No,2.0,35.0,Female,Spouse,Single/Never Married,Primary education,No Income
@@ -17212,9 +17212,9 @@ Tanzania,2017,uniqueid_2407,No,Urban,No,1.0,22.0,Female,Head of Household,Widowe
 Tanzania,2017,uniqueid_2408,No,Urban,No,2.0,22.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2409,No,Urban,Yes,2.0,34.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2410,No,Urban,Yes,4.0,47.0,Female,Spouse,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_2411,No,Unknown,Unknown,1.0,82.0,Female,Head of Household,Widowed,No formal education,Remittance Dependent
-Tanzania,2017,uniqueid_2412,No,Unknown,Unknown,3.0,38.0,Female,Head of Household,Married/Living together,Primary education,Self employed
-Tanzania,2017,uniqueid_2413,No,Unknown,Unknown,3.0,27.0,Female,Parent,Divorced/Seperated,Primary education,Informally employed
+Tanzania,2017,uniqueid_2411,No,,,1.0,82.0,Female,Head of Household,Widowed,No formal education,Remittance Dependent
+Tanzania,2017,uniqueid_2412,No,,,3.0,38.0,Female,Head of Household,Married/Living together,Primary education,Self employed
+Tanzania,2017,uniqueid_2413,No,,,3.0,27.0,Female,Parent,Divorced/Seperated,Primary education,Informally employed
 Tanzania,2017,uniqueid_2414,No,Rural,Yes,3.0,49.0,Female,Spouse,Single/Never Married,Secondary education,Remittance Dependent
 Tanzania,2017,uniqueid_2415,No,Urban,Yes,2.0,61.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2416,No,Rural,Yes,3.0,53.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
@@ -17349,8 +17349,8 @@ Tanzania,2017,uniqueid_2544,No,Urban,Yes,2.0,32.0,Male,Head of Household,Single/
 Tanzania,2017,uniqueid_2545,No,Urban,Yes,2.0,30.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2546,No,Rural,Yes,1.0,19.0,Female,Other relative,Divorced/Seperated,Primary education,Remittance Dependent
 Tanzania,2017,uniqueid_2547,No,Rural,Yes,2.0,26.0,Female,Parent,Single/Never Married,Secondary education,Remittance Dependent
-Tanzania,2017,uniqueid_2548,No,Rural,Yes,3.0,35.0,Female,Parent,Divorced/Seperated,Tertiary education,Self employed
-Tanzania,2017,uniqueid_2549,No,Rural,Yes,3.0,35.0,Male,Head of Household,Divorced/Seperated,Tertiary education,Self employed
+Tanzania,2017,uniqueid_2548,No,Rural,Yes,,,Female,Parent,Divorced/Seperated,Tertiary education,Self employed
+Tanzania,2017,uniqueid_2549,No,Rural,Yes,,,Male,Head of Household,Divorced/Seperated,Tertiary education,Self employed
 Tanzania,2017,uniqueid_2550,Yes,Urban,Yes,3.0,29.0,Female,Child,Married/Living together,Vocational/Specialised training,Self employed
 Tanzania,2017,uniqueid_2551,No,Rural,Yes,2.0,44.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
 Tanzania,2017,uniqueid_2552,No,Urban,Yes,2.0,33.0,Male,Head of Household,Single/Never Married,Secondary education,Self employed
@@ -17504,18 +17504,18 @@ Tanzania,2017,uniqueid_2699,No,Rural,No,1.0,18.0,Male,Parent,Divorced/Seperated,
 Tanzania,2017,uniqueid_2700,No,Urban,Yes,1.0,45.0,Female,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2701,No,Urban,Yes,1.0,33.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2702,No,Urban,Yes,3.0,52.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_2703,No,Urban,No,1.0,47.0,Unknown,Head of Household,Married/Living together,Primary education,Self employed
-Tanzania,2017,uniqueid_2704,No,Urban,No,1.0,70.0,Unknown,Head of Household,Widowed,No formal education,Remittance Dependent
-Tanzania,2017,uniqueid_2705,No,Rural,No,1.0,34.0,Unknown,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_2706,No,Urban,Yes,3.0,17.0,Unknown,Parent,Divorced/Seperated,Primary education,Self employed
-Tanzania,2017,uniqueid_2707,No,Urban,No,2.0,74.0,Unknown,Spouse,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_2708,No,Urban,No,1.0,29.0,Unknown,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_2709,No,Urban,Yes,1.0,25.0,Unknown,Parent,Single/Never Married,Primary education,Informally employed
-Tanzania,2017,uniqueid_2710,No,Urban,Yes,2.0,25.0,Unknown,Parent,Divorced/Seperated,Tertiary education,Self employed
-Tanzania,2017,uniqueid_2711,Yes,Urban,Yes,1.0,32.0,Unknown,Head of Household,Divorced/Seperated,Vocational/Specialised training,Formally employed Private
-Tanzania,2017,uniqueid_2712,No,Urban,Yes,2.0,39.0,Unknown,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_2713,No,Rural,Yes,1.0,22.0,Unknown,Head of Household,Divorced/Seperated,Tertiary education,Formally employed Private
-Tanzania,2017,uniqueid_2714,Yes,Rural,Yes,2.0,54.0,Unknown,Head of Household,Single/Never Married,Secondary education,Formally employed Private
+Tanzania,2017,uniqueid_2703,No,Urban,No,1.0,47.0,,Head of Household,Married/Living together,Primary education,Self employed
+Tanzania,2017,uniqueid_2704,No,Urban,No,1.0,70.0,,Head of Household,Widowed,No formal education,Remittance Dependent
+Tanzania,2017,uniqueid_2705,No,Rural,No,1.0,34.0,,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_2706,No,Urban,Yes,3.0,17.0,,Parent,Divorced/Seperated,Primary education,Self employed
+Tanzania,2017,uniqueid_2707,No,Urban,No,2.0,74.0,,Spouse,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_2708,No,Urban,No,1.0,29.0,,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_2709,No,Urban,Yes,1.0,25.0,,Parent,Single/Never Married,Primary education,Informally employed
+Tanzania,2017,uniqueid_2710,No,Urban,Yes,2.0,25.0,,Parent,Divorced/Seperated,Tertiary education,Self employed
+Tanzania,2017,uniqueid_2711,Yes,Urban,Yes,1.0,32.0,,Head of Household,Divorced/Seperated,Vocational/Specialised training,Formally employed Private
+Tanzania,2017,uniqueid_2712,No,Urban,Yes,2.0,39.0,,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_2713,No,Rural,Yes,1.0,22.0,,Head of Household,Divorced/Seperated,Tertiary education,Formally employed Private
+Tanzania,2017,uniqueid_2714,Yes,Rural,Yes,2.0,54.0,,Head of Household,Single/Never Married,Secondary education,Formally employed Private
 Tanzania,2017,uniqueid_2715,No,Urban,Yes,1.0,70.0,Male,Head of Household,Married/Living together,No formal education,Remittance Dependent
 Tanzania,2017,uniqueid_2716,No,Urban,No,2.0,70.0,Female,Child,Married/Living together,No formal education,Self employed
 Tanzania,2017,uniqueid_2717,No,Urban,Yes,2.0,43.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
@@ -17664,14 +17664,14 @@ Tanzania,2017,uniqueid_2859,No,Urban,Yes,2.0,60.0,Female,Spouse,Single/Never Mar
 Tanzania,2017,uniqueid_2860,No,Urban,Yes,6.0,24.0,Male,Parent,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2861,Yes,Urban,Yes,1.0,68.0,Female,Head of Household,Single/Never Married,Primary education,Informally employed
 Tanzania,2017,uniqueid_2862,No,Urban,No,1.0,25.0,Female,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_2863,No,Urban,Yes,2.0,48.0,Female,Head of Household,Unknown,Unknown,Unknown
-Tanzania,2017,uniqueid_2864,No,Urban,Yes,2.0,46.0,Female,Spouse,Unknown,Unknown,Unknown
-Tanzania,2017,uniqueid_2865,No,Urban,Yes,2.0,42.0,Male,Head of Household,Unknown,Unknown,Unknown
-Tanzania,2017,uniqueid_2866,No,Rural,Yes,2.0,28.0,Female,Spouse,Unknown,Unknown,Unknown
-Tanzania,2017,uniqueid_2867,No,Urban,Yes,2.0,42.0,Male,Head of Household,Unknown,Unknown,Unknown
-Tanzania,2017,uniqueid_2868,No,Urban,Yes,1.0,23.0,Male,Parent,Unknown,Unknown,Unknown
-Tanzania,2017,uniqueid_2869,No,Urban,No,1.0,70.0,Male,Head of Household,Unknown,Unknown,Unknown
-Tanzania,2017,uniqueid_2870,No,Urban,Yes,1.0,23.0,Female,Spouse,Unknown,Unknown,Unknown
+Tanzania,2017,uniqueid_2863,No,Urban,Yes,2.0,48.0,Female,Head of Household,,,
+Tanzania,2017,uniqueid_2864,No,Urban,Yes,2.0,46.0,Female,Spouse,,,
+Tanzania,2017,uniqueid_2865,No,Urban,Yes,2.0,42.0,Male,Head of Household,,,
+Tanzania,2017,uniqueid_2866,No,Rural,Yes,2.0,28.0,Female,Spouse,,,
+Tanzania,2017,uniqueid_2867,No,Urban,Yes,2.0,42.0,Male,Head of Household,,,
+Tanzania,2017,uniqueid_2868,No,Urban,Yes,1.0,23.0,Male,Parent,,,
+Tanzania,2017,uniqueid_2869,No,Urban,No,1.0,70.0,Male,Head of Household,,,
+Tanzania,2017,uniqueid_2870,No,Urban,Yes,1.0,23.0,Female,Spouse,,,
 Tanzania,2017,uniqueid_2871,No,Urban,Yes,2.0,36.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_2872,No,Rural,No,2.0,70.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
 Tanzania,2017,uniqueid_2873,No,Urban,Yes,2.0,47.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
@@ -18081,10 +18081,10 @@ Tanzania,2017,uniqueid_3276,No,Rural,Yes,2.0,23.0,Male,Head of Household,Single/
 Tanzania,2017,uniqueid_3277,No,Urban,Yes,5.0,60.0,Male,Head of Household,Single/Never Married,Primary education,Formally employed Private
 Tanzania,2017,uniqueid_3278,No,Rural,Yes,1.0,23.0,Female,Head of Household,Divorced/Seperated,Primary education,Self employed
 Tanzania,2017,uniqueid_3279,No,Rural,No,2.0,17.0,Male,Parent,Divorced/Seperated,Secondary education,Remittance Dependent
-Tanzania,2017,uniqueid_3280,Unknown,Unknown,Unknown,2.0,32.0,Female,Spouse,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_3281,Unknown,Unknown,Unknown,1.0,31.0,Female,Head of Household,Widowed,Primary education,Self employed
-Tanzania,2017,uniqueid_3282,Unknown,Unknown,Unknown,2.0,30.0,Female,Spouse,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_3283,Unknown,Unknown,Unknown,2.0,23.0,Female,Parent,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_3280,,,,2.0,32.0,Female,Spouse,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_3281,,,,1.0,31.0,Female,Head of Household,Widowed,Primary education,Self employed
+Tanzania,2017,uniqueid_3282,,,,2.0,30.0,Female,Spouse,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_3283,,,,2.0,23.0,Female,Parent,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_3284,No,Urban,Yes,1.0,32.0,Male,Head of Household,Divorced/Seperated,Primary education,Self employed
 Tanzania,2017,uniqueid_3285,No,Urban,Yes,3.0,59.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_3286,No,Urban,No,1.0,80.0,Female,Head of Household,Widowed,Primary education,No Income
@@ -18199,15 +18199,15 @@ Tanzania,2017,uniqueid_3394,No,Rural,Yes,2.0,52.0,Female,Head of Household,Singl
 Tanzania,2017,uniqueid_3395,No,Urban,No,2.0,19.0,Female,Spouse,Single/Never Married,No formal education,Self employed
 Tanzania,2017,uniqueid_3396,No,Urban,Yes,2.0,36.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_3397,No,Urban,No,2.0,46.0,Female,Spouse,Single/Never Married,Primary education,Self employed
-Unknown,2017,uniqueid_3398,No,Urban,Yes,1.0,25.0,Female,Spouse,Single/Never Married,Primary education,Remittance Dependent
-Unknown,2017,uniqueid_3399,No,Urban,No,1.0,60.0,Female,Head of Household,Widowed,Primary education,Self employed
-Unknown,2017,uniqueid_3400,No,Urban,Yes,1.0,19.0,Female,Spouse,Single/Never Married,Primary education,No Income
-Unknown,2017,uniqueid_3401,No,Urban,No,1.0,62.0,Female,Head of Household,Widowed,No formal education,Self employed
-Unknown,2017,uniqueid_3402,No,Urban,No,2.0,42.0,Female,Head of Household,Widowed,No formal education,Self employed
-Unknown,2017,uniqueid_3403,No,Rural,No,3.0,18.0,Male,Child,Divorced/Seperated,Secondary education,Remittance Dependent
-Unknown,2017,uniqueid_3404,No,Urban,Yes,2.0,73.0,Female,Head of Household,Married/Living together,No formal education,Self employed
-Unknown,2017,uniqueid_3405,No,Urban,No,1.0,40.0,Male,Head of Household,Widowed,No formal education,Self employed
-Unknown,2017,uniqueid_3406,No,Urban,No,3.0,28.0,Male,Parent,Married/Living together,No formal education,Self employed
+,2017,uniqueid_3398,No,Urban,Yes,1.0,25.0,Female,Spouse,Single/Never Married,Primary education,Remittance Dependent
+,2017,uniqueid_3399,No,Urban,No,1.0,60.0,Female,Head of Household,Widowed,Primary education,Self employed
+,2017,uniqueid_3400,No,Urban,Yes,1.0,19.0,Female,Spouse,Single/Never Married,Primary education,No Income
+,2017,uniqueid_3401,No,Urban,No,1.0,62.0,Female,Head of Household,Widowed,No formal education,Self employed
+,2017,uniqueid_3402,No,Urban,No,2.0,42.0,Female,Head of Household,Widowed,No formal education,Self employed
+,2017,uniqueid_3403,No,Rural,No,3.0,18.0,Male,Child,Divorced/Seperated,Secondary education,Remittance Dependent
+,2017,uniqueid_3404,No,Urban,Yes,2.0,73.0,Female,Head of Household,Married/Living together,No formal education,Self employed
+,2017,uniqueid_3405,No,Urban,No,1.0,40.0,Male,Head of Household,Widowed,No formal education,Self employed
+,2017,uniqueid_3406,No,Urban,No,3.0,28.0,Male,Parent,Married/Living together,No formal education,Self employed
 Tanzania,2017,uniqueid_3407,No,Urban,No,2.0,70.0,Female,Head of Household,Widowed,No formal education,Remittance Dependent
 Tanzania,2017,uniqueid_3408,No,Urban,Yes,1.0,37.0,Female,Head of Household,Married/Living together,Primary education,Self employed
 Tanzania,2017,uniqueid_3409,No,Urban,No,1.0,40.0,Female,Head of Household,Widowed,Primary education,Government Dependent
@@ -18311,11 +18311,11 @@ Tanzania,2017,uniqueid_3506,No,Urban,No,1.0,22.0,Female,Spouse,Single/Never Marr
 Tanzania,2017,uniqueid_3507,No,Urban,No,1.0,24.0,Female,Spouse,Single/Never Married,Primary education,Remittance Dependent
 Tanzania,2017,uniqueid_3508,No,Rural,Yes,2.0,32.0,Male,Head of Household,Divorced/Seperated,Primary education,Informally employed
 Tanzania,2017,uniqueid_3509,No,Urban,No,4.0,45.0,Female,Head of Household,Single/Never Married,Primary education,Self employed
-Unknown,2017,uniqueid_3510,No,Urban,No,2.0,19.0,Male,Parent,Divorced/Seperated,Secondary education,No Income
-Unknown,2017,uniqueid_3511,No,Urban,Yes,2.0,20.0,Female,Other relative,Divorced/Seperated,No formal education,Informally employed
-Unknown,2017,uniqueid_3512,No,Urban,No,3.0,22.0,Female,Spouse,Single/Never Married,Primary education,Self employed
-Unknown,2017,uniqueid_3513,No,Rural,Yes,3.0,44.0,Female,Other relative,Widowed,Primary education,Self employed
-Unknown,2017,uniqueid_3514,No,Rural,Yes,2.0,67.0,Female,Spouse,Single/Never Married,No formal education,Remittance Dependent
+,2017,uniqueid_3510,No,Urban,No,2.0,19.0,Male,Parent,Divorced/Seperated,Secondary education,No Income
+,2017,uniqueid_3511,No,Urban,Yes,2.0,20.0,Female,Other relative,Divorced/Seperated,No formal education,Informally employed
+,2017,uniqueid_3512,No,Urban,No,3.0,22.0,Female,Spouse,Single/Never Married,Primary education,Self employed
+,2017,uniqueid_3513,No,Rural,Yes,3.0,44.0,Female,Other relative,Widowed,Primary education,Self employed
+,2017,uniqueid_3514,No,Rural,Yes,2.0,67.0,Female,Spouse,Single/Never Married,No formal education,Remittance Dependent
 Tanzania,2017,uniqueid_3515,No,Urban,Yes,2.0,27.0,Female,Child,Divorced/Seperated,No formal education,Informally employed
 Tanzania,2017,uniqueid_3516,Yes,Rural,Yes,1.0,40.0,Female,Head of Household,Single/Never Married,Tertiary education,Formally employed Private
 Tanzania,2017,uniqueid_3517,No,Rural,Yes,3.0,51.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
@@ -18709,18 +18709,18 @@ Tanzania,2017,uniqueid_3904,No,Urban,No,2.0,53.0,Female,Spouse,Single/Never Marr
 Tanzania,2017,uniqueid_3905,No,Rural,No,2.0,24.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_3906,No,Urban,No,1.0,16.0,Female,Parent,Divorced/Seperated,Primary education,No Income
 Tanzania,2017,uniqueid_3907,No,Urban,Yes,1.0,24.0,Female,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_3908,No,Rural,Yes,5.0,60.0,Unknown,Head of Household,Single/Never Married,Tertiary education,Self employed
-Tanzania,2017,uniqueid_3909,No,Urban,Yes,2.0,29.0,Unknown,Spouse,Single/Never Married,Primary education,No Income
-Tanzania,2017,uniqueid_3910,No,Urban,No,2.0,22.0,Unknown,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_3911,No,Rural,Yes,1.0,32.0,Unknown,Spouse,Single/Never Married,Secondary education,Self employed
-Tanzania,2017,uniqueid_3912,No,Urban,No,2.0,27.0,Unknown,Head of Household,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_3913,No,Urban,Yes,2.0,30.0,Unknown,Head of Household,Single/Never Married,Primary education,Informally employed
-Tanzania,2017,uniqueid_3914,No,Urban,Yes,1.0,56.0,Unknown,Head of Household,Widowed,No formal education,Remittance Dependent
-Tanzania,2017,uniqueid_3915,Yes,Urban,Yes,2.0,55.0,Unknown,Head of Household,Single/Never Married,Vocational/Specialised training,Formally employed Private
-Tanzania,2017,uniqueid_3916,No,Rural,No,2.0,43.0,Unknown,Head of Household,Married/Living together,No formal education,Informally employed
-Tanzania,2017,uniqueid_3917,No,Urban,No,2.0,62.0,Unknown,Spouse,Single/Never Married,Primary education,Remittance Dependent
-Tanzania,2017,uniqueid_3918,No,Urban,Yes,5.0,23.0,Unknown,Child,Single/Never Married,Tertiary education,Self employed
-Tanzania,2017,uniqueid_3919,No,Urban,No,3.0,36.0,Unknown,Spouse,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_3908,No,Rural,Yes,5.0,60.0,,Head of Household,Single/Never Married,Tertiary education,Self employed
+Tanzania,2017,uniqueid_3909,No,Urban,Yes,2.0,29.0,,Spouse,Single/Never Married,Primary education,No Income
+Tanzania,2017,uniqueid_3910,No,Urban,No,2.0,22.0,,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_3911,No,Rural,Yes,1.0,32.0,,Spouse,Single/Never Married,Secondary education,Self employed
+Tanzania,2017,uniqueid_3912,No,Urban,No,2.0,27.0,,Head of Household,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_3913,No,Urban,Yes,2.0,30.0,,Head of Household,Single/Never Married,Primary education,Informally employed
+Tanzania,2017,uniqueid_3914,No,Urban,Yes,1.0,56.0,,Head of Household,Widowed,No formal education,Remittance Dependent
+Tanzania,2017,uniqueid_3915,Yes,Urban,Yes,2.0,55.0,,Head of Household,Single/Never Married,Vocational/Specialised training,Formally employed Private
+Tanzania,2017,uniqueid_3916,No,Rural,No,2.0,43.0,,Head of Household,Married/Living together,No formal education,Informally employed
+Tanzania,2017,uniqueid_3917,No,Urban,No,2.0,62.0,,Spouse,Single/Never Married,Primary education,Remittance Dependent
+Tanzania,2017,uniqueid_3918,No,Urban,Yes,5.0,23.0,,Child,Single/Never Married,Tertiary education,Self employed
+Tanzania,2017,uniqueid_3919,No,Urban,No,3.0,36.0,,Spouse,Single/Never Married,No formal education,Self employed
 Tanzania,2017,uniqueid_3920,No,Urban,No,2.0,45.0,Male,Head of Household,Single/Never Married,No formal education,Informally employed
 Tanzania,2017,uniqueid_3921,No,Rural,Yes,2.0,30.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_3922,No,Urban,Yes,2.0,38.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
@@ -18778,13 +18778,13 @@ Tanzania,2017,uniqueid_3973,No,Urban,No,2.0,19.0,Female,Spouse,Single/Never Marr
 Tanzania,2017,uniqueid_3974,No,Rural,Yes,2.0,28.0,Female,Spouse,Single/Never Married,Primary education,Informally employed
 Tanzania,2017,uniqueid_3975,No,Urban,No,2.0,56.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_3976,Yes,Urban,Yes,1.0,33.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_3977,Unknown,Urban,Yes,1.0,50.0,Female,Head of Household,Widowed,No formal education,Self employed
-Tanzania,2017,uniqueid_3978,Unknown,Urban,No,2.0,44.0,Female,Spouse,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_3979,Unknown,Rural,No,1.0,30.0,Female,Spouse,Single/Never Married,No formal education,No Income
-Tanzania,2017,uniqueid_3980,Unknown,Rural,No,1.0,23.0,Female,Parent,Divorced/Seperated,Tertiary education,Self employed
-Tanzania,2017,uniqueid_3981,Unknown,Rural,Yes,1.0,58.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_3982,Unknown,Urban,No,1.0,17.0,Female,Spouse,Single/Never Married,Primary education,No Income
-Tanzania,2017,uniqueid_3983,Unknown,Rural,Yes,5.0,22.0,Female,Parent,Married/Living together,Secondary education,Formally employed Private
+Tanzania,2017,uniqueid_3977,,Urban,Yes,1.0,50.0,Female,Head of Household,Widowed,No formal education,Self employed
+Tanzania,2017,uniqueid_3978,,Urban,No,2.0,44.0,Female,Spouse,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_3979,,Rural,No,1.0,30.0,Female,Spouse,Single/Never Married,No formal education,No Income
+Tanzania,2017,uniqueid_3980,,Rural,No,1.0,23.0,Female,Parent,Divorced/Seperated,Tertiary education,Self employed
+Tanzania,2017,uniqueid_3981,,Rural,Yes,1.0,58.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_3982,,Urban,No,1.0,17.0,Female,Spouse,Single/Never Married,Primary education,No Income
+Tanzania,2017,uniqueid_3983,,Rural,Yes,5.0,22.0,Female,Parent,Married/Living together,Secondary education,Formally employed Private
 Tanzania,2017,uniqueid_3984,No,Rural,No,2.0,51.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
 Tanzania,2017,uniqueid_3985,No,Urban,No,2.0,30.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_3986,No,Urban,Yes,2.0,66.0,Male,Head of Household,Single/Never Married,No formal education,Self employed
@@ -18915,13 +18915,13 @@ Tanzania,2017,uniqueid_4110,No,Urban,Yes,2.0,56.0,Female,Head of Household,Marri
 Tanzania,2017,uniqueid_4111,No,Urban,No,1.0,28.0,Female,Head of Household,Married/Living together,Primary education,Government Dependent
 Tanzania,2017,uniqueid_4112,No,Urban,No,2.0,23.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_4113,No,Urban,No,2.0,40.0,Female,Head of Household,Married/Living together,Primary education,Government Dependent
-Tanzania,2017,uniqueid_4114,No,Urban,No,3.0,95.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_4115,Yes,Rural,Yes,3.0,32.0,Male,Head of Household,Single/Never Married,Primary education,Formally employed Private
-Tanzania,2017,uniqueid_4116,No,Urban,No,3.0,40.0,Female,Spouse,Single/Never Married,Primary education,Informally employed
-Tanzania,2017,uniqueid_4117,No,Urban,No,3.0,31.0,Female,Head of Household,Married/Living together,Primary education,Self employed
-Tanzania,2017,uniqueid_4118,No,Urban,Yes,3.0,37.0,Female,Spouse,Single/Never Married,Secondary education,Self employed
-Tanzania,2017,uniqueid_4119,No,Urban,Yes,3.0,42.0,Female,Spouse,Single/Never Married,Primary education,Informally employed
-Tanzania,2017,uniqueid_4120,Yes,Rural,Yes,3.0,38.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_4114,No,Urban,No,,95.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_4115,Yes,Rural,Yes,,32.0,Male,Head of Household,Single/Never Married,Primary education,Formally employed Private
+Tanzania,2017,uniqueid_4116,No,Urban,No,,40.0,Female,Spouse,Single/Never Married,Primary education,Informally employed
+Tanzania,2017,uniqueid_4117,No,Urban,No,,31.0,Female,Head of Household,Married/Living together,Primary education,Self employed
+Tanzania,2017,uniqueid_4118,No,Urban,Yes,,37.0,Female,Spouse,Single/Never Married,Secondary education,Self employed
+Tanzania,2017,uniqueid_4119,No,Urban,Yes,,42.0,Female,Spouse,Single/Never Married,Primary education,Informally employed
+Tanzania,2017,uniqueid_4120,Yes,Rural,Yes,,38.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_4121,No,Urban,No,1.0,65.0,Female,Head of Household,Widowed,No formal education,No Income
 Tanzania,2017,uniqueid_4122,No,Rural,Yes,4.0,42.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_4123,No,Rural,No,1.0,23.0,Female,Spouse,Single/Never Married,Primary education,No Income
@@ -19077,12 +19077,12 @@ Tanzania,2017,uniqueid_4272,No,Rural,No,1.0,24.0,Female,Spouse,Single/Never Marr
 Tanzania,2017,uniqueid_4273,No,Urban,No,3.0,83.0,Male,Child,Widowed,No formal education,No Income
 Tanzania,2017,uniqueid_4274,No,Rural,Yes,2.0,33.0,Male,Head of Household,Single/Never Married,Primary education,Formally employed Private
 Tanzania,2017,uniqueid_4275,No,Rural,Yes,2.0,67.0,Male,Head of Household,Single/Never Married,Tertiary education,Self employed
-Tanzania,2017,uniqueid_4276,No,Rural,Yes,2.0,19.0,Female,Spouse,Unknown,Primary education,Remittance Dependent
-Tanzania,2017,uniqueid_4277,No,Urban,No,2.0,30.0,Female,Spouse,Unknown,Primary education,Self employed
-Tanzania,2017,uniqueid_4278,No,Urban,Yes,1.0,71.0,Female,Head of Household,Unknown,Primary education,Self employed
-Tanzania,2017,uniqueid_4279,No,Urban,Yes,2.0,30.0,Female,Head of Household,Unknown,Primary education,Self employed
-Tanzania,2017,uniqueid_4280,No,Urban,Yes,1.0,48.0,Female,Head of Household,Unknown,Primary education,Informally employed
-Tanzania,2017,uniqueid_4281,No,Urban,No,5.0,22.0,Male,Parent,Unknown,No formal education,Self employed
+Tanzania,2017,uniqueid_4276,No,Rural,Yes,2.0,19.0,Female,Spouse,,Primary education,Remittance Dependent
+Tanzania,2017,uniqueid_4277,No,Urban,No,2.0,30.0,Female,Spouse,,Primary education,Self employed
+Tanzania,2017,uniqueid_4278,No,Urban,Yes,1.0,71.0,Female,Head of Household,,Primary education,Self employed
+Tanzania,2017,uniqueid_4279,No,Urban,Yes,2.0,30.0,Female,Head of Household,,Primary education,Self employed
+Tanzania,2017,uniqueid_4280,No,Urban,Yes,1.0,48.0,Female,Head of Household,,Primary education,Informally employed
+Tanzania,2017,uniqueid_4281,No,Urban,No,5.0,22.0,Male,Parent,,No formal education,Self employed
 Tanzania,2017,uniqueid_4282,No,Urban,No,2.0,32.0,Male,Head of Household,Single/Never Married,No formal education,Self employed
 Tanzania,2017,uniqueid_4283,No,Urban,No,2.0,49.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_4284,No,Urban,No,2.0,17.0,Male,Parent,Divorced/Seperated,No formal education,Informally employed
@@ -19240,18 +19240,18 @@ Tanzania,2017,uniqueid_4435,No,Urban,Yes,3.0,17.0,Male,Child,Divorced/Seperated,
 Tanzania,2017,uniqueid_4436,No,Urban,No,1.0,67.0,Female,Spouse,Single/Never Married,Primary education,No Income
 Tanzania,2017,uniqueid_4437,No,Rural,Yes,1.0,19.0,Female,Spouse,Single/Never Married,Primary education,Remittance Dependent
 Tanzania,2017,uniqueid_4438,No,Urban,Yes,1.0,65.0,Female,Head of Household,Married/Living together,Primary education,Self employed
-Tanzania,2017,uniqueid_4439,Unknown,Urban,Yes,2.0,52.0,Female,Head of Household,Single/Never Married,Primary education,Other Income
-Tanzania,2017,uniqueid_4440,Unknown,Rural,Yes,1.0,28.0,Female,Head of Household,Married/Living together,Primary education,Formally employed Private
-Tanzania,2017,uniqueid_4441,Unknown,Urban,No,2.0,32.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_4442,Unknown,Urban,Yes,2.0,46.0,Female,Spouse,Single/Never Married,Secondary education,Self employed
-Tanzania,2017,uniqueid_4443,Unknown,Urban,No,3.0,29.0,Female,Spouse,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_4444,Unknown,Urban,Yes,2.0,39.0,Male,Head of Household,Single/Never Married,Secondary education,Self employed
-Tanzania,2017,uniqueid_4445,Unknown,Rural,Yes,1.0,34.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
-Tanzania,2017,uniqueid_4446,Unknown,Urban,No,2.0,35.0,Male,Head of Household,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_4447,Unknown,Urban,Yes,3.0,26.0,Female,Parent,Married/Living together,Primary education,Remittance Dependent
-Tanzania,2017,uniqueid_4448,Unknown,Urban,Yes,2.0,53.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_4449,Unknown,Urban,No,2.0,25.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
-Tanzania,2017,uniqueid_4450,Unknown,Urban,Yes,2.0,31.0,Male,Child,Divorced/Seperated,Primary education,Self employed
+Tanzania,2017,uniqueid_4439,,Urban,Yes,2.0,52.0,Female,Head of Household,Single/Never Married,Primary education,Other Income
+Tanzania,2017,uniqueid_4440,,Rural,Yes,1.0,28.0,Female,Head of Household,Married/Living together,Primary education,Formally employed Private
+Tanzania,2017,uniqueid_4441,,Urban,No,2.0,32.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_4442,,Urban,Yes,2.0,46.0,Female,Spouse,Single/Never Married,Secondary education,Self employed
+Tanzania,2017,uniqueid_4443,,Urban,No,3.0,29.0,Female,Spouse,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_4444,,Urban,Yes,2.0,39.0,Male,Head of Household,Single/Never Married,Secondary education,Self employed
+Tanzania,2017,uniqueid_4445,,Rural,Yes,1.0,34.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
+Tanzania,2017,uniqueid_4446,,Urban,No,2.0,35.0,Male,Head of Household,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_4447,,Urban,Yes,3.0,26.0,Female,Parent,Married/Living together,Primary education,Remittance Dependent
+Tanzania,2017,uniqueid_4448,,Urban,Yes,2.0,53.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_4449,,Urban,No,2.0,25.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
+Tanzania,2017,uniqueid_4450,,Urban,Yes,2.0,31.0,Male,Child,Divorced/Seperated,Primary education,Self employed
 Tanzania,2017,uniqueid_4451,No,Rural,Yes,1.0,17.0,Female,Spouse,Single/Never Married,Primary education,No Income
 Tanzania,2017,uniqueid_4452,No,Urban,No,2.0,22.0,Female,Spouse,Single/Never Married,No formal education,Self employed
 Tanzania,2017,uniqueid_4453,No,Urban,Yes,1.0,53.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
@@ -21079,22 +21079,22 @@ Tanzania,2017,uniqueid_6274,No,Urban,No,2.0,34.0,Female,Spouse,Single/Never Marr
 Tanzania,2017,uniqueid_6275,No,Urban,No,3.0,40.0,Female,Spouse,Single/Never Married,No formal education,Self employed
 Tanzania,2017,uniqueid_6276,No,Urban,No,1.0,29.0,Female,Spouse,Single/Never Married,Primary education,Self employed
 Tanzania,2017,uniqueid_6277,Yes,Rural,Yes,2.0,33.0,Female,Spouse,Single/Never Married,Vocational/Specialised training,Formally employed Private
-Tanzania,2017,uniqueid_6278,Unknown,Rural,Yes,2.0,28.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_6279,Unknown,Urban,No,3.0,59.0,Female,Head of Household,Widowed,Primary education,Informally employed
-Tanzania,2017,uniqueid_6280,Unknown,Urban,No,4.0,24.0,Female,Spouse,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_6281,Unknown,Rural,Yes,2.0,32.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
-Tanzania,2017,uniqueid_6282,Unknown,Rural,Yes,2.0,34.0,Male,Other relative,Single/Never Married,Primary education,Informally employed
-Tanzania,2017,uniqueid_6283,Unknown,Urban,Yes,2.0,22.0,Female,Spouse,Single/Never Married,Secondary education,Remittance Dependent
-Tanzania,2017,uniqueid_6284,Unknown,Rural,No,4.0,35.0,Male,Other non-relatives,Divorced/Seperated,Primary education,Informally employed
-Tanzania,2017,uniqueid_6285,Unknown,Rural,Yes,2.0,35.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_6286,Unknown,Urban,Yes,1.0,35.0,Female,Spouse,Single/Never Married,No formal education,No Income
-Tanzania,2017,uniqueid_6287,No,Urban,Yes,2.0,35.0,Male,Head of Household,Single/Never Married,Primary education,Remittance Dependent
-Tanzania,2017,uniqueid_6288,No,Rural,No,2.0,35.0,Female,Other relative,Divorced/Seperated,Tertiary education,No Income
-Tanzania,2017,uniqueid_6289,No,Urban,No,2.0,35.0,Female,Spouse,Single/Never Married,Primary education,Self employed
-Tanzania,2017,uniqueid_6290,No,Urban,Yes,1.0,35.0,Female,Head of Household,Single/Never Married,No formal education,Remittance Dependent
-Tanzania,2017,uniqueid_6291,No,Urban,No,1.0,35.0,Female,Parent,Married/Living together,Primary education,Self employed
-Tanzania,2017,uniqueid_6292,No,Urban,No,2.0,35.0,Female,Head of Household,Single/Never Married,No formal education,Self employed
-Tanzania,2017,uniqueid_6293,No,Urban,Yes,2.0,35.0,Male,Head of Household,Single/Never Married,Tertiary education,Informally employed
+Tanzania,2017,uniqueid_6278,,Rural,Yes,2.0,28.0,Male,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_6279,,Urban,No,3.0,59.0,Female,Head of Household,Widowed,Primary education,Informally employed
+Tanzania,2017,uniqueid_6280,,Urban,No,4.0,24.0,Female,Spouse,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_6281,,Rural,Yes,2.0,32.0,Male,Head of Household,Single/Never Married,Primary education,Informally employed
+Tanzania,2017,uniqueid_6282,,Rural,Yes,2.0,34.0,Male,Other relative,Single/Never Married,Primary education,Informally employed
+Tanzania,2017,uniqueid_6283,,Urban,Yes,2.0,22.0,Female,Spouse,Single/Never Married,Secondary education,Remittance Dependent
+Tanzania,2017,uniqueid_6284,,Rural,No,4.0,,Male,Other non-relatives,Divorced/Seperated,Primary education,Informally employed
+Tanzania,2017,uniqueid_6285,,Rural,Yes,2.0,,Male,Head of Household,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_6286,,Urban,Yes,1.0,,Female,Spouse,Single/Never Married,No formal education,No Income
+Tanzania,2017,uniqueid_6287,No,Urban,Yes,2.0,,Male,Head of Household,Single/Never Married,Primary education,Remittance Dependent
+Tanzania,2017,uniqueid_6288,No,Rural,No,2.0,,Female,Other relative,Divorced/Seperated,Tertiary education,No Income
+Tanzania,2017,uniqueid_6289,No,Urban,No,2.0,,Female,Spouse,Single/Never Married,Primary education,Self employed
+Tanzania,2017,uniqueid_6290,No,Urban,Yes,1.0,,Female,Head of Household,Single/Never Married,No formal education,Remittance Dependent
+Tanzania,2017,uniqueid_6291,No,Urban,No,1.0,,Female,Parent,Married/Living together,Primary education,Self employed
+Tanzania,2017,uniqueid_6292,No,Urban,No,2.0,,Female,Head of Household,Single/Never Married,No formal education,Self employed
+Tanzania,2017,uniqueid_6293,No,Urban,Yes,2.0,,Male,Head of Household,Single/Never Married,Tertiary education,Informally employed
 Tanzania,2017,uniqueid_6294,No,Urban,No,3.0,72.0,Female,Head of Household,Married/Living together,No formal education,Self employed
 Tanzania,2017,uniqueid_6295,No,Urban,Yes,4.0,34.0,Male,Parent,Single/Never Married,Vocational/Specialised training,Informally employed
 Tanzania,2017,uniqueid_6296,No,Urban,No,1.0,39.0,Female,Parent,Divorced/Seperated,Primary education,Self employed
@@ -23512,12 +23512,12 @@ Uganda,2018,uniqueid_2099,No,Rural,No,4.0,20.0,Female,Spouse,Married/Living toge
 Uganda,2018,uniqueid_2100,No,Rural,Yes,4.0,30.0,Female,Spouse,Married/Living together,No formal education,Other Income
 Uganda,2018,uniqueid_2101,No,Rural,No,6.0,19.0,Female,Parent,Single/Never Married,Secondary education,No Income
 Uganda,2018,uniqueid_2102,No,Rural,No,2.0,57.0,Female,Head of Household,Divorced/Seperated,No formal education,Other Income
-Uganda,2018,uniqueid_2103,No,Urban,Yes,3.0,26.0,Female,Head of Household,Married/Living together,Secondary education,No Income
-Uganda,2018,uniqueid_2107,No,Urban,Yes,3.0,24.0,Female,Spouse,Married/Living together,Primary education,Self employed
-Uganda,2018,uniqueid_2108,No,Rural,No,3.0,16.0,Male,Parent,Single/Never Married,Primary education,Other Income
-Uganda,2018,uniqueid_2109,No,Urban,Yes,3.0,35.0,Male,Head of Household,Married/Living together,Primary education,Self employed
-Uganda,2018,uniqueid_2110,No,Urban,Yes,3.0,16.0,Male,Parent,Single/Never Married,Primary education,Other Income
-Uganda,2018,uniqueid_2111,No,Rural,Yes,3.0,20.0,Female,Child,Single/Never Married,Primary education,No Income
+Uganda,2018,uniqueid_2103,No,Urban,Yes,,26.0,Female,Head of Household,Married/Living together,Secondary education,No Income
+Uganda,2018,uniqueid_2107,No,Urban,Yes,,24.0,Female,Spouse,Married/Living together,Primary education,Self employed
+Uganda,2018,uniqueid_2108,No,Rural,No,,16.0,Male,Parent,Single/Never Married,Primary education,Other Income
+Uganda,2018,uniqueid_2109,No,Urban,Yes,,35.0,Male,Head of Household,Married/Living together,Primary education,Self employed
+Uganda,2018,uniqueid_2110,No,Urban,Yes,,16.0,Male,Parent,Single/Never Married,Primary education,Other Income
+Uganda,2018,uniqueid_2111,No,Rural,Yes,,20.0,Female,Child,Single/Never Married,Primary education,No Income
 Uganda,2018,uniqueid_2113,No,Rural,Yes,4.0,48.0,Female,Head of Household,Divorced/Seperated,No formal education,Other Income
 Uganda,2018,uniqueid_2114,No,Rural,Yes,2.0,27.0,Female,Head of Household,Single/Never Married,Secondary education,Other Income
 Uganda,2018,uniqueid_2115,No,Rural,Yes,5.0,27.0,Female,Parent,Widowed,Primary education,Other Income
