@@ -8,7 +8,7 @@
 #     Il effectue les actions suivantes :
 #     - Filtre et nettoie les valeurs cibles invalides.
 #     - Encode les variables binaires (target et accès téléphonique).
-#     - Sépare les features (X) de la variable cible (y).
+#     - Sépare les features (X) de la variable cible (y), sans l'identifiant.
 #     - Entraîne un classifieur Random Forest.
 #
 # Exemple d'utilisation :
@@ -26,6 +26,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 TARGET_COLUMN      = "has_a_bank_account"
 PHONE_COLUMN       = "cell_phone_access"
+ID_COLUMN          = "uniqueid"
 VALID_BINARY_VALUES = ["Yes", "No"]
 
 RANDOM_FOREST_PARAMS = {
@@ -45,7 +46,7 @@ def train_model(df: pd.DataFrame) -> tuple:
     Étapes :
         1. Filtre les lignes avec des valeurs invalides sur la target et le téléphone.
         2. Encode les colonnes binaires (Yes/No → 1/0).
-        3. Sépare X et y, applique le one-hot encoding sur X.
+        3. Sépare X et y (sans l'identifiant), applique le one-hot encoding sur X.
         4. Entraîne le modèle Random Forest.
 
     Paramètres :
@@ -107,12 +108,15 @@ def _split_features_target(df: pd.DataFrame) -> tuple:
     Sépare les features (X) de la variable cible (y)
     et applique le one-hot encoding sur X.
 
+    L'identifiant du répondant est exclu : propre à chaque ligne,
+    il n'apporte aucune information et n'existe pas dans la saisie utilisateur.
+
     Paramètres :
         df : DataFrame avec colonnes encodées
 
     Retourne :
         Tuple (X encodé, y)
     """
-    X = pd.get_dummies(df.drop(TARGET_COLUMN, axis=1))
+    X = pd.get_dummies(df.drop(columns=[TARGET_COLUMN, ID_COLUMN]))
     y = df[TARGET_COLUMN]
     return X, y

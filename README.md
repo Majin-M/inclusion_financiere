@@ -18,9 +18,9 @@ Construire un pipeline structuré de bout en bout : ingestion des données brute
 #### Spécifications
 - **Source de données** : Dataset CSV brut issu des enquêtes FinScope (`Financial_inclusion_dataset.csv`).
 - **Analyse exploratoire** : Profilage des données, détection des valeurs manquantes et des doublons, analyse des distributions — documentée dans `notebooks/EDA.ipynb`.
-- **Qualité des données** : Traitement des valeurs manquantes (médiane pour le numérique, `Unknown` pour le catégoriel), suppression des doublons, normalisation des noms de colonnes en `snake_case`.
+- **Qualité des données** : Traitement des valeurs manquantes (médiane pour le numérique, `Unknown` pour le catégoriel), suppression des doublons, retrait des années hors période d'enquête (2016 à 2018), normalisation des noms de colonnes en `snake_case`.
 - **Output** : Dataset nettoyé exporté vers `data/financial_inclusion_clean.csv`.
-- **Documentation** : Convention de nommage disponible dans `docs/naming_conventions.md`.
+- **Documentation** : Convention de nommage disponible dans `docs/convention_de_nommage.md`.
 
 ---
 
@@ -39,10 +39,22 @@ Pour plus de détails sur les dépendances, consultez [requirements.txt](require
 
 ---
 
+## 🏗️ Architecture
+
+![Architecture](docs/architecture.png)
+
+## 🔀 Flux de données
+
+![Flux de données](docs/flux_de_donnees.png)
+
+Les sources éditables sont dans `docs/architecture.drawio` et `docs/flux_de_donnees.drawio` (à ouvrir avec [draw.io](https://www.drawio.com/)).
+
+---
+
 ## 🗂️ Structure du projet
 
 ```
-financial-inclusion/
+inclusion_financiere/
 │
 ├── app.py                          # Point d'entrée — streamlit run app.py
 │
@@ -51,14 +63,16 @@ financial-inclusion/
 │   └── model.py                    # Entraînement du modèle Random Forest
 │
 ├── data/
-│   ├── Financial_inclusion_dataset.csv   # Dataset brut (non versionné)
+│   ├── Financial_inclusion_dataset.csv   # Dataset brut (enquêtes FinScope)
 │   └── financial_inclusion_clean.csv     # Dataset nettoyé (généré par l'EDA)
 │
 ├── notebooks/
 │   └── EDA.ipynb                   # Analyse exploratoire des données
 │
 ├── docs/
-│   └── naming_conventions.md       # Conventions de nommage du projet
+│   ├── architecture.drawio / .png  # Schéma d'architecture
+│   ├── flux_de_donnees.drawio / .png  # Schéma du flux de données
+│   └── convention_de_nommage.md    # Conventions de nommage du projet
 │
 ├── requirements.txt                # Dépendances du projet
 └── README.md                       # Présentation du projet
@@ -70,8 +84,8 @@ financial-inclusion/
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/Majin-M/financial-inclusion.git
-cd financial-inclusion
+git clone https://github.com/Majin-M/inclusion_financiere.git
+cd inclusion_financiere
 ```
 
 ### 2. Installer les dépendances

@@ -87,6 +87,7 @@ Ce document décrit les conventions de nommage utilisées pour les modules, fonc
 | `DEFAULT_DATA_PATH` | `data_processing.py` | Chemin par défaut vers le CSV nettoyé |
 | `TARGET_COLUMN` | `model.py` | Nom de la colonne cible (`has_a_bank_account`) |
 | `PHONE_COLUMN` | `model.py` | Nom de la colonne d'accès téléphonique |
+| `ID_COLUMN` | `model.py` | Identifiant du répondant, exclu des features (`uniqueid`) |
 | `VALID_BINARY_VALUES` | `model.py` | Valeurs acceptées pour les colonnes binaires |
 | `RANDOM_FOREST_PARAMS` | `model.py` | Hyperparamètres du classifieur |
 | `GENDER_LABELS` | `app.py` | Dictionnaire de traduction des genres |
