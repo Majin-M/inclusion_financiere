@@ -39,7 +39,8 @@ Ce document décrit les conventions de nommage utilisées pour les modules, fonc
 |---|---|
 | `app.py` | Point d'entrée — interface Streamlit et orchestration |
 | `src/data_processing.py` | Chargement et prétraitement des données |
-| `src/model.py` | Entraînement du modèle de prédiction |
+| `src/quality_checks.py` | Contrôles qualité du dataset nettoyé |
+| `src/model.py` | Évaluation, entraînement et sauvegarde du modèle |
 | `notebooks/EDA.ipynb` | Analyse exploratoire — nettoyage et export du dataset |
 
 ---
@@ -50,7 +51,25 @@ Ce document décrit les conventions de nommage utilisées pour les modules, fonc
 - Les fonctions de chargement d'une ressource doivent commencer par le préfixe `load_`.
 - **`load_<ressource>`**
   - Exemple : `load_clean_data` → Charge le CSV nettoyé issu de l'EDA.
-  - Exemple : `load_model_and_data` → Charge les données et entraîne le modèle (Streamlit cache).
+  - Exemple : `load_model_and_data` → Charge les données et le modèle sauvegardé, l'entraîne une fois s'il manque (Streamlit cache).
+  - Exemple : `load_model` → Charge le modèle sauvegardé, ses colonnes de référence et l'empreinte du CSV d'entraînement.
+
+### **Règles de sauvegarde**
+- Les fonctions qui écrivent une ressource sur disque doivent commencer par le préfixe `save_`.
+- **`save_<ressource>`**
+  - Exemple : `save_model` → Enregistre le modèle entraîné, ses colonnes de référence et l'empreinte du CSV.
+
+### **Règles d'empreinte**
+- Les fonctions qui calculent l'empreinte d'un fichier commencent par `hash_`.
+- **`hash_<ressource>`**
+  - Exemple : `hash_data_file` → Empreinte SHA-256 du CSV, pour savoir si le modèle sauvegardé est périmé.
+
+### **Règles de contrôle**
+- Les fonctions qui vérifient des données et retournent les écarts trouvés commencent par `check_` ; celles qui lèvent une erreur en cas d'écart, par `assert_`.
+- **`check_<objet>`** / **`assert_<objet>`**
+  - Exemple : `check_clean_data` → Lance tous les contrôles et retourne les écarts par contrôle.
+  - Exemple : `check_model_features` → Retourne les colonnes issues de l'identifiant.
+  - Exemple : `assert_clean_data` → Lève une erreur listant les contrôles en échec.
 
 ### **Règles de prétraitement**
 - Les fonctions de transformation des données utilisateur doivent utiliser le préfixe `preprocess_`.
@@ -61,6 +80,11 @@ Ce document décrit les conventions de nommage utilisées pour les modules, fonc
 - Les fonctions d'entraînement de modèle doivent utiliser le préfixe `train_`.
 - **`train_<modèle>`**
   - Exemple : `train_model` → Entraîne le classifieur Random Forest.
+
+### **Règles d'évaluation**
+- Les fonctions qui mesurent les performances d'un modèle doivent utiliser le préfixe `evaluate_`.
+- **`evaluate_<modèle>`**
+  - Exemple : `evaluate_model` → Mesure précision, rappel et AUC sur un jeu de test stratifié.
 
 ### **Règles internes**
 - Les fonctions internes à un module (non exposées) doivent commencer par `_`.
@@ -90,6 +114,10 @@ Ce document décrit les conventions de nommage utilisées pour les modules, fonc
 | `ID_COLUMN` | `model.py` | Identifiant du répondant, exclu des features (`uniqueid`) |
 | `VALID_BINARY_VALUES` | `model.py` | Valeurs acceptées pour les colonnes binaires |
 | `RANDOM_FOREST_PARAMS` | `model.py` | Hyperparamètres du classifieur |
+| `TEST_SIZE` / `SPLIT_SEED` | `model.py` | Part et graine du jeu de test |
+| `MODEL_PATH` / `METRICS_PATH` | `model.py` | Fichiers du modèle sauvegardé et des mesures |
+| `SURVEY_YEARS` | `quality_checks.py` | Années d'enquête valides (2016 à 2018) |
+| `EDUCATION_LEVELS` | `quality_checks.py` | Niveaux d'éducation nommés acceptés |
 | `GENDER_LABELS` | `app.py` | Dictionnaire de traduction des genres |
 | `LOCATION_LABELS` | `app.py` | Dictionnaire de traduction des localisations |
 | `PHONE_LABELS` | `app.py` | Dictionnaire de traduction des accès téléphoniques |
@@ -120,9 +148,14 @@ Ce document décrit les conventions de nommage utilisées pour les modules, fonc
 
 | Préfixe | Signification | Exemple(s) |
 |---|---|---|
-| `load_` | Chargement d'une ressource ou d'un modèle | `load_clean_data`, `load_model_and_data` |
+| `load_` | Chargement d'une ressource ou d'un modèle | `load_clean_data`, `load_model`, `load_model_and_data` |
 | `preprocess_` | Transformation et encodage des données | `preprocess_user_input` |
 | `train_` | Entraînement d'un modèle ML | `train_model` |
+| `evaluate_` | Mesure des performances d'un modèle | `evaluate_model` |
+| `save_` | Écriture d'une ressource sur disque | `save_model` |
+| `hash_` | Empreinte d'un fichier | `hash_data_file` |
+| `check_` | Contrôle qui retourne les écarts trouvés | `check_clean_data`, `check_model_features` |
+| `assert_` | Contrôle qui lève une erreur en cas d'écart | `assert_clean_data` |
 | `render_` | Rendu d'un composant d'interface Streamlit | `render_form`, `render_prediction` |
 | `build_` | Construction d'un objet de données | `build_user_input` |
 | `reverse_` | Inversion d'un mapping clé/valeur | `reverse_label` |

@@ -1,0 +1,11 @@
+{
+  "rows": 23482,
+  "features": 45,
+  "test_rows": 4697,
+  "test_positives": 662,
+  "accuracy": 0.8665,
+  "baseline_accuracy": 0.8591,
+  "recall": 0.3973,
+  "precision": 0.5356,
+  "auc": 0.8152
+}

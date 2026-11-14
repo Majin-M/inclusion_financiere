@@ -7,7 +7,9 @@
 #     à partir de ses caractéristiques socio-démographiques.
 #
 #     Il effectue les actions suivantes :
-#     - Charge les données nettoyées et entraîne le modèle au démarrage.
+#     - Charge les données nettoyées et le modèle sauvegardé (python -m src.model) ;
+#       s'il manque ou a été entraîné sur un autre CSV, relance les contrôles
+#       qualité, l'entraîne une fois et le sauvegarde.
 #     - Affiche un formulaire de saisie pour les caractéristiques de l'individu.
 #     - Retourne la probabilité de possession d'un compte bancaire.
 #
@@ -33,7 +35,8 @@ import streamlit as st
 import pandas as pd
 
 from src.data_processing import load_clean_data, preprocess_user_input
-from src.model import train_model
+from src.model import MODEL_PATH, hash_data_file, load_model, save_model, train_model
+from src.quality_checks import assert_clean_data
 
 
 # ==============================================================================
@@ -63,13 +66,23 @@ PHONE_LABELS    = {"Yes": "Oui",     "No": "Non"}
 @st.cache_resource
 def load_model_and_data() -> tuple:
     """
-    Charge les données nettoyées et entraîne le modèle Random Forest.
+    Charge les données nettoyées et le modèle sauvegardé. Le modèle n'est
+    entraîné qu'une fois par version du CSV : s'il manque, ou s'il a été
+    entraîné sur un autre fichier, les contrôles qualité sont relancés,
+    puis il est entraîné et sauvegardé.
 
     Retourne :
         Tuple (DataFrame, modèle entraîné, colonnes de référence)
     """
     df = load_clean_data()
+    data_hash = hash_data_file()
+    if MODEL_PATH.exists():
+        model, reference_columns, saved_hash = load_model()
+        if saved_hash == data_hash:
+            return df, model, reference_columns
+    assert_clean_data(df)
     model, reference_columns = train_model(df)
+    save_model(model, reference_columns, data_hash)
     return df, model, reference_columns
 
 

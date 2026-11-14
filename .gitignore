@@ -1,0 +1,3 @@
+# Modèle entraîné (≈ 20 Mo) : régénéré par python -m src.model
+models/model.joblib
+__pycache__/
