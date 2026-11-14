@@ -12,8 +12,8 @@
 #     - Retourne la probabilité de possession d'un compte bancaire.
 #
 # Paramètres configurables (via l'interface) :
-#     country          : Pays de résidence (Afrique de l'Est)
-#     year             : Année de l'enquête
+#     country          : Pays de résidence (Afrique de l'Est), dont se déduit
+#                        l'année de l'enquête : une seule par pays
 #     respondent_age   : Âge du répondant
 #     household_size   : Taille du foyer
 #     gender           : Genre du répondant
@@ -107,6 +107,20 @@ def build_user_input(form_values: dict) -> pd.DataFrame:
     return pd.DataFrame([form_values])
 
 
+def survey_year(country: str) -> int:
+    """
+    Retourne l'année d'enquête d'un pays : chaque pays n'a été enquêté
+    qu'une année, la demander permettrait des couples qui n'existent pas.
+
+    Paramètres :
+        country : Pays sélectionné dans le formulaire
+
+    Retourne :
+        Année de l'enquête dans ce pays
+    """
+    return int(df.loc[df["country"] == country, "year"].mode()[0])
+
+
 # ==============================================================================
 # Interface Streamlit
 # ==============================================================================
@@ -126,12 +140,10 @@ def render_form() -> dict | None:
         col1, col2 = st.columns(2)
 
         with col1:
-            country = st.selectbox("Pays", df["country"].unique())
-            year    = st.slider(
-                "Année",
-                int(df["year"].min()),
-                int(df["year"].max()),
-                int(df["year"].median())
+            country = st.selectbox(
+                "Pays",
+                df["country"].unique(),
+                help="L'année de l'enquête s'en déduit : chaque pays n'a été enquêté qu'une année."
             )
             age = st.slider(
                 "Âge",
@@ -165,7 +177,7 @@ def render_form() -> dict | None:
 
     return {
         "country":               country,
-        "year":                  year,
+        "year":                  survey_year(country),
         "respondent_age":        age,
         "household_size":        household_size,
         "gender_of_respondent":  reverse_label(GENDER_LABELS,   gender),

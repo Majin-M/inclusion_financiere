@@ -18,7 +18,7 @@ Construire un pipeline structuré de bout en bout : ingestion des données brute
 #### Spécifications
 - **Source de données** : Dataset CSV brut issu des enquêtes FinScope (`Financial_inclusion_dataset.csv`).
 - **Analyse exploratoire** : Profilage des données, détection des valeurs manquantes et des doublons, analyse des distributions — documentée dans `notebooks/EDA.ipynb`.
-- **Qualité des données** : Traitement des valeurs manquantes (médiane pour le numérique, `Unknown` pour le catégoriel), suppression des doublons, retrait des années hors période d'enquête (2016 à 2018), normalisation des noms de colonnes en `snake_case`.
+- **Qualité des données** : Pays manquant déduit de l'année d'enquête (une seule année par pays, confirmée par l'identifiant), traitement des valeurs manquantes (médiane pour le numérique, `Unknown` pour le catégoriel), suppression des doublons, retrait des années hors période d'enquête (2016 à 2018), normalisation des noms de colonnes en `snake_case`.
 - **Output** : Dataset nettoyé exporté vers `data/financial_inclusion_clean.csv`.
 - **Documentation** : Convention de nommage disponible dans `docs/convention_de_nommage.md`.
 
@@ -31,11 +31,25 @@ Entraîner un modèle de classification et le rendre accessible via une interfac
 
 #### Fonctionnalités
 - **Modèle** : Classifieur Random Forest (200 estimateurs) entraîné sur les données nettoyées.
-- **Variables** : Pays, âge, genre, localisation, niveau d'éducation, type d'emploi, situation matrimoniale, taille du foyer, accès téléphonique.
+- **Variables** : Pays et année d'enquête (déduite du pays dans le formulaire), âge, genre, localisation, niveau d'éducation, type d'emploi, situation matrimoniale, taille du foyer, accès téléphonique.
 - **Interface** : Formulaire interactif avec sliders, selectbox et labels traduits en français.
 - **Résultat** : Probabilité de possession d'un compte bancaire affichée en temps réel.
 
 Pour plus de détails sur les dépendances, consultez [requirements.txt](requirements.txt).
+
+---
+
+## ⚠️ Limites des données
+
+Les quatre enquêtes ne sont pas harmonisées. Le nettoyage ne corrige que ce qu'une règle vérifiable permet de corriger ; le reste est documenté dans la section 7 du notebook, sans modifier les données.
+
+| Constat | Détail | Traitement |
+|---|---|---|
+| Un pays, une année | Rwanda 2016, Tanzanie 2017, Kenya et Ouganda 2018 : l'effet du pays et celui de l'année ne se séparent pas | L'application déduit l'année du pays au lieu de la demander |
+| Pays manquant | 14 lignes de 2017 sans pays. Seule la Tanzanie a été enquêtée en 2017, et leurs identifiants (3398 à 3406, 3510 à 3514) comblent exactement des trous de la numérotation tanzanienne | Rattachées à la Tanzanie |
+| Types d'emploi codés différemment | Ni agriculture ni emploi public en Tanzanie et en Ouganda, « sans revenu » seulement chez eux, pas d'emploi informel en Ouganda | Aucun : les types d'emploi ne se comparent qu'à l'intérieur d'un pays |
+| Ville et campagne en Tanzanie | 72,7 % d'urbains, contre 14 à 42 % ailleurs. Ces « urbains » ont moins souvent un compte (4,8 % contre 20,7 %), un téléphone (52 % contre 79 %) et au moins le secondaire (13 % contre 36 %) que les « ruraux » : l'inverse des autres pays | Aucun : les libellés semblent inversés, mais rien dans la source ne permet de l'affirmer |
+| Taille du foyer en Tanzanie | 82,8 % des foyers comptent 0 à 2 personnes, contre 16 à 31 % ailleurs, et les 36 foyers de taille 0 sont tous tanzaniens | Aucun : la notion de foyer n'est sans doute pas la même |
 
 ---
 
