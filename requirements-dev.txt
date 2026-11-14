@@ -1,0 +1,6 @@
+# Exécution du notebook (nettoyage) en intégration continue
+nbconvert==7.17.0
+nbclient==0.10.4
+ipykernel==7.1.0
+matplotlib==3.10.8
+seaborn==0.13.2

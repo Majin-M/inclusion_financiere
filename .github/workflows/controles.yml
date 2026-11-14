@@ -1,0 +1,44 @@
+# Contrôles et évaluation, relancés à chaque push et à chaque pull request.
+#
+# 1. Le notebook est réexécuté depuis le CSV brut : le CSV nettoyé qu'il produit
+#    doit être identique à celui du dépôt (nettoyage reproductible).
+# 2. Les contrôles qualité passent sur le CSV nettoyé.
+# 3. Le modèle est évalué : les mesures obtenues doivent être identiques à
+#    models/metrics.json, pour que les chiffres publiés suivent le code.
+
+name: Contrôles et évaluation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  controles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Nettoyage reproductible (notebook → CSV nettoyé)
+        run: |
+          jupyter nbconvert --to notebook --execute --output "$RUNNER_TEMP/EDA.ipynb" notebooks/EDA.ipynb
+          git diff --exit-code --stat data/financial_inclusion_clean.csv
+
+      - name: Contrôles qualité
+        run: python -m src.quality_checks
+
+      - name: Évaluation et entraînement du modèle
+        run: python -m src.model
+
+      - name: Mesures publiées à jour
+        run: git diff --exit-code models/metrics.json

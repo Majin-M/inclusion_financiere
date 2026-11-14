@@ -1,4 +1,7 @@
 # Application de Prédiction d'Inclusion Bancaire
+
+[![Contrôles et évaluation](https://github.com/Majin-M/inclusion_financiere/actions/workflows/controles.yml/badge.svg)](https://github.com/Majin-M/inclusion_financiere/actions/workflows/controles.yml)
+
 Bienvenue dans le dépôt de l'**Application de Prédiction d'Inclusion Bancaire** ! 🚀  
 Ce projet présente une application interactive de machine learning permettant de prédire la probabilité qu'un individu possède un compte bancaire, à partir de ses caractéristiques socio-démographiques. Conçu comme projet de portfolio, il met en avant les bonnes pratiques en data engineering et développement Python : pipeline de données structuré, clean code, séparation des responsabilités et documentation complète.
 
@@ -67,6 +70,14 @@ Mesurées par `python -m src.model` sur 4 697 réponses mises de côté, dont 66
 
 L'entraînement vérifie en plus que l'identifiant `uniqueid` ne fait pas partie des variables.
 
+#### Intégration continue
+
+À chaque push et à chaque pull request, [GitHub Actions](.github/workflows/controles.yml) relance tout, sur des versions de dépendances figées :
+
+1. **Nettoyage reproductible** : le notebook est réexécuté depuis le CSV brut, et le CSV nettoyé qu'il produit doit être identique à celui du dépôt.
+2. **Contrôles qualité** : `python -m src.quality_checks`.
+3. **Évaluation** : `python -m src.model`, dont les mesures doivent être identiques à `models/metrics.json`. Un changement qui modifie les performances sans mettre à jour les chiffres publiés fait échouer le build.
+
 ---
 
 ## ⚠️ Limites des données
@@ -125,7 +136,9 @@ inclusion_financiere/
 │   ├── flux_de_donnees.drawio / .png  # Schéma du flux de données
 │   └── convention_de_nommage.md    # Conventions de nommage du projet
 │
-├── requirements.txt                # Dépendances du projet
+├── .github/workflows/controles.yml # Intégration continue : nettoyage, contrôles, évaluation
+├── requirements.txt                # Dépendances du projet (versions figées)
+├── requirements-dev.txt            # Exécution du notebook (Jupyter, graphiques)
 └── README.md                       # Présentation du projet
 ```
 
@@ -145,7 +158,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Générer le dataset nettoyé
-Ouvrir et exécuter `notebooks/EDA.ipynb` dans Jupyter pour produire `data/financial_inclusion_clean.csv`.
+Ouvrir et exécuter `notebooks/EDA.ipynb` dans Jupyter pour produire `data/financial_inclusion_clean.csv` (dépendances du notebook : `pip install -r requirements-dev.txt`).
 
 ### 4. Contrôler, évaluer et entraîner le modèle
 ```bash
